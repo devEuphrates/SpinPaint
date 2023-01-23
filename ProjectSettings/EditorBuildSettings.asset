@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Level/Scenes/Dev/Draw Mechanic Test.unity
-    guid: 9df401e2504c8e24dac2ac04976114da
+    path: Assets/Level/Scenes/Studio.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects: {}
