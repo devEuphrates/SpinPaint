@@ -4,38 +4,44 @@ public class Plate : MonoBehaviour
 {
     [SerializeField] Texture2D _painted;
     [SerializeField] Texture2D _empty;
-    [SerializeField] Texture2D _stencil;
-    Color[] _stencilColors;
+    Texture2D _stencil;
 
-    //Texture2D _brushTex;
+    [Space]
+    [SerializeField] DrawDataSO _drawData;
 
-    //[SerializeField] BrushHolderSO _brushHolder;
-    [SerializeField] BrushSO _brush;
+    private void OnEnable()
+    {
+        _drawData.OnBrushSet += SetBrush;
+        _drawData.OnLayerChange += SetLayer;
+    }
 
-    //private void OnEnable()
-    //{
-    //    _brushHolder.OnBrushSet += SetBrush;
-    //}
-
-    //private void OnDisable()
-    //{
-    //    _brushHolder.OnBrushSet -= SetBrush;
-    //}
+    private void OnDisable()
+    {
+        _drawData.OnBrushSet -= SetBrush;
+        _drawData.OnLayerChange -= SetLayer;
+    }
 
     private void Start()
     {
-        //_brushTex = _brush.Texture;
-        _stencilColors = _stencil.GetPixels();
+        SetLayer();
+        SetBrush();
 
         Color[] emptyPixels = _empty.GetPixels();
         _painted.SetPixels(emptyPixels);
         _painted.Apply(true);
     }
 
+    BrushSO _brush;
+    void SetBrush() => _brush = _drawData.SelectedBrush;
 
-    //void SetBrush() => _brush = _brushHolder.Brush;
+    Color[] _stencilColors;
+    void SetLayer()
+    {
+        _stencil = _drawData.CurrentLayer.Texture;
+        _stencilColors = _stencil.GetPixels();
+    }
 
-    public void Paint(Vector2 uvCoords, Color color)
+    public void Paint(Vector2 uvCoords)
     {
         Vector2Int pixelCoords = new Vector2Int((int)(uvCoords.x * _painted.width), (int)(uvCoords.y * _painted.height));
         Vector2Int brushHalfSize = new Vector2Int((int)(_brush.Texture.width * .5f), (int)(_brush.Texture.height * .5f));
@@ -57,7 +63,7 @@ public class Plate : MonoBehaviour
             if (col.r < .1f)
                 continue;
 
-            _painted.SetPixel(coords.x, coords.y, color);
+            _painted.SetPixel(coords.x, coords.y, _drawData.Color);
 
             //area[brushCoords.x + brushCoords.y * _brushTex.width] = color;
         }

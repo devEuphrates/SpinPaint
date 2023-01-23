@@ -65,7 +65,7 @@ public class Draw : MonoBehaviour
         if (!_rayCaster.TryCastRay(ray.direction, out var hit))
             return;
 
-        _plate.Paint(hit.textureCoord, Color.red);
+        _plate.Paint(hit.textureCoord);
     }
 
     float _timePassed = 0f;
