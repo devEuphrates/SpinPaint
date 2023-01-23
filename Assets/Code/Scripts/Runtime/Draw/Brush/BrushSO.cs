@@ -15,7 +15,8 @@ public class BrushSO : ScriptableObject
         {
             for (int x = 0; x < Texture.width; x++)
             {
-                if (Texture.GetPixel(x, y).a < .1f)
+                Color col = Texture.GetPixel(x, y);
+                if (col.r < .1f || col.a < .1f)
                     continue;
 
                 coords.Add(new Vector2Int(x, y));
