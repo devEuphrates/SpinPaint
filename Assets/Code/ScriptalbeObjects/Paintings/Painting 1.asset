@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0548bcd013cea5d4e9d1db74146aec1e, type: 3}
+  m_Name: Painting 1
+  m_EditorClassIdentifier: 
+  Base: {fileID: 2800000, guid: 57ceef6f8e3333341a90a58d2cb2b39e, type: 3}
+  Layers:
+  - Texture: {fileID: 2800000, guid: 8bfc7a2adcee65246890b120768bb422, type: 3}
+    Color: {r: 0.2783019, g: 1, b: 0.3150943, a: 0}
+  - Texture: {fileID: 2800000, guid: 5c81c3f7a0239fe4898f6c9e9a05d02b, type: 3}
+    Color: {r: 1, g: 0.59263784, b: 0.3254717, a: 0}
+  - Texture: {fileID: 2800000, guid: 57752924231cac8439537b6fa4fb1279, type: 3}
+    Color: {r: 0.43867922, g: 0.48270425, b: 1, a: 0}
+  - Texture: {fileID: 2800000, guid: addf3af933c941e469b087c7122eed5b, type: 3}
+    Color: {r: 0.78839684, g: 0, b: 1, a: 0}
+  PaintingTexture: {fileID: 0}
