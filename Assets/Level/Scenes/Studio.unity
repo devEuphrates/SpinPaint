@@ -20,7 +20,7 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 1, g: 1, b: 1, a: 1}
+  m_AmbientSkyColor: {r: 0.8584906, g: 0.8584906, b: 0.8584906, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44316345, g: 0.49217385, b: 0.57166636, a: 1}
+  m_IndirectSpecularColor: {r: 0.44377586, g: 0.49288827, b: 0.57208496, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -449,7 +449,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 525980415}
   m_LocalRotation: {x: -0.4999993, y: 0.5000007, z: 0.4999993, w: 0.5000007}
-  m_LocalPosition: {x: 1.47, y: 9.52, z: 0.37}
+  m_LocalPosition: {x: 1.47, y: 10.37, z: 0.37}
   m_LocalScale: {x: 11.67, y: 15, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -743,6 +743,7 @@ GameObject:
   m_Component:
   - component: {fileID: 705507995}
   - component: {fileID: 705507994}
+  - component: {fileID: 705507996}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -762,7 +763,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 2
+  m_Intensity: 1.5
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -774,7 +775,7 @@ Light:
     m_Strength: 1
     m_Bias: 0
     m_NormalBias: 0
-    m_NearPlane: 0.1
+    m_NearPlane: 2
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -801,7 +802,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 1
+  m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -819,14 +820,34 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
-  m_LocalRotation: {x: 0.35879457, y: -0.3884448, z: 0.28103286, w: 0.8008731}
+  m_LocalRotation: {x: 0.660989, y: 0.068678945, z: -0.52600443, w: 0.5307505}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 23
-  m_LocalEulerAnglesHint: {x: 52.47, y: -43.654, z: 16.341}
+  m_LocalEulerAnglesHint: {x: 50.705, y: -79.377, z: -132.415}
+--- !u!114 &705507996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705507993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 1
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
 --- !u!1 &792630563
 GameObject:
   m_ObjectHideFlags: 0
@@ -1135,6 +1156,7 @@ GameObject:
   m_Component:
   - component: {fileID: 847808785}
   - component: {fileID: 847808784}
+  - component: {fileID: 847808786}
   m_Layer: 0
   m_Name: Spot Light
   m_TagString: Untagged
@@ -1155,9 +1177,9 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1.25
-  m_Range: 10
-  m_SpotAngle: 61.1
-  m_InnerSpotAngle: 21.80208
+  m_Range: 4.84
+  m_SpotAngle: 134.22357
+  m_InnerSpotAngle: 37.384773
   m_CookieSize: 10
   m_Shadows:
     m_Type: 2
@@ -1211,14 +1233,34 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 847808783}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 6.8, z: 4.75}
+  m_LocalRotation: {x: 0.9047104, y: -0, z: -0, w: 0.42602718}
+  m_LocalPosition: {x: 0, y: 2.914, z: 5.607}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 24
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 129.569, y: 0, z: 0}
+--- !u!114 &847808786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847808783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 1
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
 --- !u!1 &998534992
 GameObject:
   m_ObjectHideFlags: 0
@@ -2466,7 +2508,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1574993520573587149, guid: 2eaba35d2071b7e409ce8f1322c92b24, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.95
+      value: 1.413
       objectReference: {fileID: 0}
     - target: {fileID: 1574993520573587149, guid: 2eaba35d2071b7e409ce8f1322c92b24, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2527,7 +2569,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1292466690291561105, guid: 9322a6976f500684a9b0f9c7e5e6d2c3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.082
+      value: 3.4
       objectReference: {fileID: 0}
     - target: {fileID: 1292466690291561105, guid: 9322a6976f500684a9b0f9c7e5e6d2c3, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3217,7 +3259,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7007208898471050258, guid: e35d3f78c08e1804d8a5b1d9652fcc0b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.95
+      value: 1.413
       objectReference: {fileID: 0}
     - target: {fileID: 7007208898471050258, guid: e35d3f78c08e1804d8a5b1d9652fcc0b, type: 3}
       propertyPath: m_LocalRotation.w
