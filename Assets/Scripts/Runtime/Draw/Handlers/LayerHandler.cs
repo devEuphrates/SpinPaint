@@ -1,12 +1,11 @@
 using Euphrates;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class LayerHandler : MonoBehaviour
 {
     [Header("Triggers")]
     [SerializeField] TriggerChannelSO _layerChange;
+    [SerializeField] TriggerChannelSO _lastLayer;
     [Space]
     [SerializeField] DrawDataSO _drawingData;
 
@@ -27,13 +26,9 @@ public class LayerHandler : MonoBehaviour
 
     void ChangeLayer()
     {
-        if (_drawingData.CurrentLayerIndex > _drawingData.LayerCount - 1)
-        {
-            // Painting finished events;
-            print("Painting done!");
-            return;
-        }
-
         _drawingData.CurrentLayerIndex++;
+
+        if (_drawingData.CurrentLayerIndex >= _drawingData.LayerCount - 1)
+            _lastLayer.Invoke();
     }
 }
