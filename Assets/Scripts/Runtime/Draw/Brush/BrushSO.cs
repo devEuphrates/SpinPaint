@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Brush", menuName = "Drawing/Brush")]
@@ -6,7 +7,7 @@ public class BrushSO : ScriptableObject
 {
     public Texture2D Texture;
     public Vector2Int[] Coordinates;
-
+#if UNITY_EDITOR
     public void GenerateCoordinates()
     {
         List<Vector2Int> coords = new List<Vector2Int>();
@@ -24,5 +25,8 @@ public class BrushSO : ScriptableObject
         }
 
         Coordinates = coords.ToArray();
+        EditorUtility.SetDirty(this);
     }
+#endif
+
 }

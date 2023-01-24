@@ -1,5 +1,3 @@
-using TMPro;
-using UnityEngine.UI;
 using Euphrates;
 using UnityEngine;
 
