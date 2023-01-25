@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a40a118e2c763d47b6b57df9fa095d3, type: 3}
   m_Name: Drawing Data
   m_EditorClassIdentifier: 
-  Color: {r: 1, g: 0.9318118, b: 0, a: 0}
+  Color: {r: 1, g: 1, b: 1, a: 1}
   _selectedBrush: {fileID: 11400000, guid: 24cc643f1866427489305c50da2766ab, type: 2}
   BrushSize: 1
   Painting: {fileID: 11400000, guid: 2147afa13a5514d45a5882b34193b1cb, type: 2}
-  _currentLayer: 0
+  _currentLayer: 3

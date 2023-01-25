@@ -1,3 +1,4 @@
+using Euphrates;
 using UnityEngine;
 
 public class Plate : MonoBehaviour
@@ -8,17 +9,23 @@ public class Plate : MonoBehaviour
 
     [Space]
     [SerializeField] DrawDataSO _drawData;
+    [SerializeField] TriggerChannelSO _reset;
+
 
     private void OnEnable()
     {
         _drawData.OnBrushSet += SetBrush;
         _drawData.OnLayerChange += SetLayer;
+
+        _reset.AddListener(ResetCanvas);
     }
 
     private void OnDisable()
     {
         _drawData.OnBrushSet -= SetBrush;
         _drawData.OnLayerChange -= SetLayer;
+
+        _reset.RemoveListener(ResetCanvas);
     }
 
     private void Start()
@@ -26,6 +33,11 @@ public class Plate : MonoBehaviour
         SetLayer();
         SetBrush();
 
+        ResetCanvas();
+    }
+
+    void ResetCanvas()
+    {
         Color[] emptyPixels = _empty.GetPixels();
         _painted.SetPixels(emptyPixels);
         _painted.Apply(true);

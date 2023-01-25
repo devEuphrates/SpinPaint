@@ -1,27 +1,34 @@
+using Euphrates;
 using UnityEngine;
 
-[RequireComponent(typeof(IRayCaster), typeof(IColorer))]
+[RequireComponent(typeof(IRayCaster))]
 public class Draw : MonoBehaviour
 {
+    [Header("Events")]
+    [SerializeField] TriggerChannelSO _enable;
+    [SerializeField] TriggerChannelSO _disable;
+
+    [Space]
     [SerializeField] InputReaderSO _inputs;
     [SerializeField] CamHolderSO _camHolder;
     Camera _mainCamera;
 
     IRayCaster _rayCaster;
-    IColorer _colorer;
 
     Plate _plate;
+
+    bool _enabled = false;
 
     bool _touching = false;
     Vector2 _touchPos = Vector2.zero;
 
-    private void Awake()
-    {
-        _rayCaster = GetComponent<IRayCaster>();
-    }
+    private void Awake() => _rayCaster = GetComponent<IRayCaster>();
 
     private void OnEnable()
     {
+        _enable.AddListener(Enable);
+        _disable.AddListener(Disable);
+
         _camHolder.OnCameraSet += OnMainCameraSet;
 
         _inputs.OnTouchDown += OnTouchDown;
@@ -31,6 +38,9 @@ public class Draw : MonoBehaviour
 
     private void OnDisable()
     {
+        _enable.RemoveListener(Enable);
+        _disable.RemoveListener(Disable);
+
         _camHolder.OnCameraSet -= OnMainCameraSet;
 
         _inputs.OnTouchDown -= OnTouchDown;
@@ -42,6 +52,10 @@ public class Draw : MonoBehaviour
     {
         _plate = GameObject.FindObjectOfType<Plate>();
     }
+
+    void Enable() => _enabled = true;
+
+    void Disable() => _enabled = false;
 
     void OnMainCameraSet() => _mainCamera = _camHolder.Cam;
 
@@ -74,7 +88,7 @@ public class Draw : MonoBehaviour
     {
         _timePassed += Time.deltaTime;
 
-        if (!_touching || _timePassed < _timeTreshold)
+        if (!_enabled || !_touching || _timePassed < _timeTreshold)
             return;
 
         _timePassed = 0f;

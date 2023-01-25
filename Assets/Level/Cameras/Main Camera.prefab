@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 8453624826273649285}
   - component: {fileID: 9128402858139023021}
   - component: {fileID: 3653601033135223844}
-  - component: {fileID: 5989833443064665857}
   - component: {fileID: 2604510904302717737}
   m_Layer: 0
   m_Name: Main Camera
@@ -149,6 +148,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a319bdd9f8acace44b662b8b715d28b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _enable: {fileID: 11400000, guid: 51dba14582c6cdb48ab4b86ec88d4ee8, type: 2}
+  _disable: {fileID: 11400000, guid: 6ca3332e630bb414db1b0faae1f96cef, type: 2}
   _inputs: {fileID: 11400000, guid: c6748c42efad09b4395399825f754937, type: 2}
   _camHolder: {fileID: 11400000, guid: 75c5e980291cfc64ea9e561893680f9f, type: 2}
 --- !u!114 &3653601033135223844
@@ -168,18 +169,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   _rayIndicator: {fileID: 0}
---- !u!114 &5989833443064665857
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7007208898471050263}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3aee0a27990ee0e45b3c82e934e9365c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2604510904302717737
 MonoBehaviour:
   m_ObjectHideFlags: 0

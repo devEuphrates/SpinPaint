@@ -97,6 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _enableEvent: {fileID: 11400000, guid: 51dba14582c6cdb48ab4b86ec88d4ee8, type: 2}
+  _disableEvent: {fileID: 11400000, guid: 6ca3332e630bb414db1b0faae1f96cef, type: 2}
   _layerDone: {fileID: 11400000, guid: e97d5b695bb36604ebbb6d33724e5e9b, type: 2}
   _changeLayer: {fileID: 11400000, guid: e3f92bf27e3d7db40b1a6bfca28e5595, type: 2}
   _stencilMaterial: {fileID: 2100000, guid: 24792558fd666994098c7eebd437b615, type: 2}
@@ -302,6 +303,7 @@ MonoBehaviour:
   _painted: {fileID: 2800000, guid: a83f2271ec14cf44db3da07f28488920, type: 3}
   _empty: {fileID: 2800000, guid: 57ceef6f8e3333341a90a58d2cb2b39e, type: 3}
   _drawData: {fileID: 11400000, guid: 29bf299f34a694b4a839b0fbfd85cab0, type: 2}
+  _reset: {fileID: 11400000, guid: b0522f7b23ee39c4c8afba92099a5207, type: 2}
 --- !u!114 &4869965822817012632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -314,4 +316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96d6eb1ed8fe68341bf593c9fe8f3179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 20
+  _idleSpeed: 20
+  _fastSpeed: 200
+  _speedUp: {fileID: 11400000, guid: 6ca3332e630bb414db1b0faae1f96cef, type: 2}
+  _switchToIdle: {fileID: 11400000, guid: 3fc9d8dc12b625c46a7ac5a0bb836c4f, type: 2}

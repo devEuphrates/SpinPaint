@@ -5,6 +5,7 @@ using UnityEngine.Events;
 public class DrawDataSO : ScriptableObject
 {
     public Color Color;
+    public void ResetColor() => Color = Color.white;
     
     [SerializeField] BrushSO _selectedBrush;
     public event UnityAction OnBrushSet;
