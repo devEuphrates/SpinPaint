@@ -15,5 +15,5 @@ MonoBehaviour:
   Color: {r: 0.2783019, g: 1, b: 0.3150943, a: 1}
   _selectedBrush: {fileID: 11400000, guid: 24cc643f1866427489305c50da2766ab, type: 2}
   BrushSize: 1
-  Painting: {fileID: 11400000, guid: 91780788884f6584fb98d1ab20017cc7, type: 2}
+  Painting: {fileID: 11400000, guid: 3c936e21cca842545bde237e079d6374, type: 2}
   _currentLayer: 3
