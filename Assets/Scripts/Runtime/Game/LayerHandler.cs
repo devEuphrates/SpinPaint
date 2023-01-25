@@ -6,6 +6,7 @@ public class LayerHandler : MonoBehaviour
     [Header("Triggers")]
     [SerializeField] TriggerChannelSO _layerChange;
     [SerializeField] TriggerChannelSO _lastLayer;
+    [SerializeField] TriggerChannelSO _nextPainting;
     [Space]
     [SerializeField] DrawDataSO _drawingData;
 
@@ -31,4 +32,6 @@ public class LayerHandler : MonoBehaviour
         if (_drawingData.CurrentLayerIndex >= _drawingData.LayerCount - 1)
             _lastLayer.Invoke();
     }
+
+    void ResetLayer() => _drawingData.CurrentLayerIndex = 0;
 }

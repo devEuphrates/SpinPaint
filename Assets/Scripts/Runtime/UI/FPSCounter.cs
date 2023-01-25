@@ -7,8 +7,6 @@ public class FPSCounter : MonoBehaviour, IPointerClickHandler
     [SerializeField] TextMeshProUGUI _text;
     [SerializeField] CanvasGroup _canvasGroup;
 
-    void Awake() => Application.targetFrameRate = 60;
-
     float _timePassed = 0f;
     float _timeTreshold = 1f;
     void Update()
