@@ -13,11 +13,13 @@ public class LayerHandler : MonoBehaviour
     private void OnEnable()
     {
         _layerChange.AddListener(ChangeLayer);
+        _nextPainting.AddListener(ResetLayer);
     }
 
     private void OnDisable()
     {
         _layerChange.RemoveListener(ChangeLayer);
+        _nextPainting.RemoveListener(ResetLayer);
     }
 
     private void Start()

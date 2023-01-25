@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _paintings:
   - {fileID: 11400000, guid: 2147afa13a5514d45a5882b34193b1cb, type: 2}
+  - {fileID: 11400000, guid: 91780788884f6584fb98d1ab20017cc7, type: 2}

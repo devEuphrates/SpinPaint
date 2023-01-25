@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.3708985, g: 0.3783704, b: 0.35722548, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -201,6 +201,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b011c219e7cc324d89b987df0e404a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _load: {fileID: 11400000, guid: 076c55a7e1ba9a94b9b75420dc89c068, type: 2}
+  _saveEvents:
+  - {fileID: 11400000, guid: 51dba14582c6cdb48ab4b86ec88d4ee8, type: 2}
+  _saveChannel: {fileID: 11400000, guid: f58f3f798601247479e41dcf67664dea, type: 2}
+  _levelIndex: {fileID: 11400000, guid: 456d12f2153ef474a9d7fdf3dfbe78c1, type: 2}
 --- !u!4 &1169722620
 Transform:
   m_ObjectHideFlags: 0
@@ -308,6 +313,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba9ae6764e9f7d34d825dff7a78694be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _loadUI: {fileID: 11400000, guid: 0fe3a2713dd64ea42b6bf1547625536a, type: 2}
+  _loadStudio: {fileID: 11400000, guid: a7e17761d41171d4091e9e814ec2142c, type: 2}
+  _studioLoaded: {fileID: 11400000, guid: 4c94aecb5f60f0c4d881f006044e98a5, type: 2}
+  _UIScene: 1
+  _studioScene: 2
 --- !u!1 &1878724423
 GameObject:
   m_ObjectHideFlags: 0

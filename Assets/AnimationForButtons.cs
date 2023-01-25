@@ -5,19 +5,31 @@ using UnityEngine.UI;
 public class AnimationForButtons : MonoBehaviour
 {
     [Header("Events")]
-    [SerializeField] TriggerChannelSO _lastLayerTrigger;
+    [SerializeField] TriggerChannelSO _reset;
+    [SerializeField] TriggerChannelSO _lastLayer;
     [Space]
     [SerializeField] Button _nextButton;
     [SerializeField] Button _finishButton;
 
     private void OnEnable()
     {
-        _lastLayerTrigger.AddListener(OnLastLayer);
+        _reset.AddListener(ResetButons);
+        _lastLayer.AddListener(OnLastLayer);
     }
     private void OnDisable()
     {
-        _lastLayerTrigger.RemoveListener(OnLastLayer);
+        _lastLayer.RemoveListener(OnLastLayer);
+        _reset.RemoveListener(ResetButons);
     }
+
+    void ResetButons()
+    {
+        Vector2 pos = ((RectTransform)_nextButton.transform).anchoredPosition;
+        ((RectTransform)_nextButton.transform).anchoredPosition = new Vector2(40, pos.y);
+        _nextButton.interactable = true;
+        _finishButton.interactable = false;
+    }
+
     private void OnLastLayer()
     {
         _nextButton.interactable = false;

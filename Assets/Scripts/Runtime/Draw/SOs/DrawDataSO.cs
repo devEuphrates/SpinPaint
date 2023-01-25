@@ -20,7 +20,18 @@ public class DrawDataSO : ScriptableObject
     }
 
     public float BrushSize = 1f;
-    public PaintingSO Painting;
+
+    PaintingSO _painting;
+    public event UnityAction OnPaintingChange;
+    public PaintingSO Painting
+    {
+        get => _painting;
+        set
+        {
+            _painting = value;
+            OnPaintingChange?.Invoke();
+        }
+    }
 
     public int LayerCount { get => Painting.Layers.Length; }
 
