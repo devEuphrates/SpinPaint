@@ -15,8 +15,10 @@ MonoBehaviour:
   Base: {fileID: 2800000, guid: 57ceef6f8e3333341a90a58d2cb2b39e, type: 3}
   Layers:
   - Texture: {fileID: 2800000, guid: 7d02ff6ba39b18e4da600aedcc735cf1, type: 3}
-    Color: {r: 0.8039216, g: 0.5176471, b: 0.94509804, a: 1}
+    Color: {r: 1, g: 0, b: 0.7344632, a: 1}
   - Texture: {fileID: 2800000, guid: 388bc39fd9aab6e43b989cf327afddd3, type: 3}
-    Color: {r: 1, g: 0.98039216, b: 0.39607844, a: 1}
+    Color: {r: 0, g: 1, b: 0.9564264, a: 1}
   - Texture: {fileID: 2800000, guid: 3f17955cf436fd9448bc18d91f3e19d4, type: 3}
-    Color: {r: 0.22745098, g: 0.8901961, b: 0.45490196, a: 1}
+    Color: {r: 0, g: 1, b: 0.101790905, a: 1}
+  - Texture: {fileID: 2800000, guid: e03f028c08a8e594eb8f9b9ca0916bcd, type: 3}
+    Color: {r: 1, g: 0.27937597, b: 0, a: 1}

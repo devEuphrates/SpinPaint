@@ -9,6 +9,7 @@ public class UIHandler : MonoBehaviour
     {
         ResetOtherCanvases();
         _canvases[0].OnTriggered();
+
     }
     private void OnEnable()
     {
@@ -33,6 +34,7 @@ public class UIHandler : MonoBehaviour
         for (int i = 0; i < _canvases.Length; i++)
             _canvases[i].Canvas.gameObject.SetActive(false);
     }
+
 }
 
 
