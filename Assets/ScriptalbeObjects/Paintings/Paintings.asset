@@ -16,4 +16,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 4493eef9b0294ba4c8438538efb82489, type: 2}
   - {fileID: 11400000, guid: 31544ccae1b6cfe4a93fc2e450248fdb, type: 2}
   - {fileID: 11400000, guid: 91780788884f6584fb98d1ab20017cc7, type: 2}
+<<<<<<< Updated upstream
   - {fileID: 11400000, guid: 2147afa13a5514d45a5882b34193b1cb, type: 2}
+=======
+  - {fileID: 11400000, guid: 3c936e21cca842545bde237e079d6374, type: 2}
+>>>>>>> Stashed changes
