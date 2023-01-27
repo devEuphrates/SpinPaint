@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0548bcd013cea5d4e9d1db74146aec1e, type: 3}
+  m_Name: Painting 9
+  m_EditorClassIdentifier: 
+  Base: {fileID: 2800000, guid: 57ceef6f8e3333341a90a58d2cb2b39e, type: 3}
+  Layers:
+  - Texture: {fileID: 2800000, guid: 075afac1ad02cf44f8e34505c47f3a20, type: 3}
+    Color: {r: 1, g: 0, b: 0.50476074, a: 1}
+  - Texture: {fileID: 2800000, guid: 26a3ff5ff1da0794faef1fbc0ce91a9e, type: 3}
+    Color: {r: 0.8042306, g: 1, b: 0, a: 1}
+  - Texture: {fileID: 2800000, guid: 651e6b0a1c9cfa7419f5a157d845789d, type: 3}
+    Color: {r: 0, g: 1, b: 0.101790905, a: 1}
+  - Texture: {fileID: 2800000, guid: 74424297614f44e4d874c65c856ec542, type: 3}
+    Color: {r: 0, g: 0.31269073, b: 1, a: 1}

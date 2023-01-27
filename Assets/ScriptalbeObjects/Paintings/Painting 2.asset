@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Base: {fileID: 2800000, guid: 57ceef6f8e3333341a90a58d2cb2b39e, type: 3}
   Layers:
-  - Texture: {fileID: 2800000, guid: 39e3e1c43c09b8940a2c4c4dd4efa92b, type: 3}
-    Color: {r: 0.35686275, g: 0.9490196, b: 0.26666668, a: 1}
-  - Texture: {fileID: 2800000, guid: 6664aa9b4c1fbd74f821f358a51f0c40, type: 3}
-    Color: {r: 0.9490196, g: 0.8862745, b: 0.019607844, a: 1}
-  - Texture: {fileID: 2800000, guid: ad68ca51d7c2fad438bdeb60287a92ef, type: 3}
-    Color: {r: 0.9490196, g: 0.67058825, b: 0.5686275, a: 1}
-  - Texture: {fileID: 2800000, guid: 75e6c814c5a41a84aac1dac76a6a9554, type: 3}
-    Color: {r: 0.9490196, g: 0.25490198, b: 0.7647059, a: 1}
+  - Texture: {fileID: 2800000, guid: 8bfc7a2adcee65246890b120768bb422, type: 3}
+    Color: {r: 1, g: 0.7062056, b: 0, a: 1}
+  - Texture: {fileID: 2800000, guid: 5c81c3f7a0239fe4898f6c9e9a05d02b, type: 3}
+    Color: {r: 0, g: 0.31269073, b: 1, a: 1}
+  - Texture: {fileID: 2800000, guid: 57752924231cac8439537b6fa4fb1279, type: 3}
+    Color: {r: 1, g: 0.27937597, b: 0, a: 1}
+  - Texture: {fileID: 2800000, guid: addf3af933c941e469b087c7122eed5b, type: 3}
+    Color: {r: 0, g: 1, b: 0.46079922, a: 1}

@@ -9,7 +9,7 @@ public class PaintHolderSO : ScriptableObject
     public PaintingSO GetPainting(int index, bool repeat = true)
     {
         bool overflow = index > _paintings.Count - 1;
-        index = repeat ? index % _paintings.Count : overflow ? Random.Range(0, _paintings.Count) : index;
+        index = repeat ? index % _paintings.Count : overflow ? Random.Range(1, _paintings.Count) : index;
         return _paintings[index];
     }
 }
