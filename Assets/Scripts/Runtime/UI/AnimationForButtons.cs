@@ -24,10 +24,11 @@ public class AnimationForButtons : MonoBehaviour
 
     void ResetButons()
     {
-        Vector2 pos = ((RectTransform)_nextButton.transform).anchoredPosition;
-        ((RectTransform)_nextButton.transform).anchoredPosition = new Vector2(40, pos.y);
         _nextButton.interactable = true;
         _finishButton.interactable = false;
+
+        Vector2 pos = ((RectTransform)_nextButton.transform).anchoredPosition;
+        ((RectTransform)_nextButton.transform).anchoredPosition = new Vector2(40, pos.y);
     }
 
     private void OnLastLayer()

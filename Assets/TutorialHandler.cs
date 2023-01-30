@@ -1,48 +1,35 @@
 using Euphrates;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Windows;
-using Input = UnityEngine.Input;
 
 public class TutorialHandler : MonoBehaviour
 {
-    private Animator _tutorialAnimator;
+    Animator _tutorialAnimator;
     [SerializeField] IntSO _levelIndex;
     [SerializeField] TriggerChannelSO _drawingPhase;
-    // Start is called before the first frame update
-    void Start()
-    {
-        _tutorialAnimator = GetComponent<Animator>();
+    [SerializeField] TriggerChannelSO _disable;
 
+    private void Awake()
+    {
+        if (_levelIndex.Value != 0)
+            Destroy(this.gameObject);
     }
+
+    void Start() => _tutorialAnimator = GetComponent<Animator>();
+
     private void OnEnable()
     {
-        _drawingPhase.AddListener(ChangeAnimation);
+        _drawingPhase.AddListener(TutorialProceed);
+        _disable.AddListener(Disable);
     }
 
     private void OnDisable()
     {
-        _drawingPhase.RemoveListener(ChangeAnimation);
+        _drawingPhase.RemoveListener(TutorialProceed);
+        _disable.RemoveListener(Disable);
     }
 
+    void Disable() => Destroy(this.gameObject);
 
-    // Update is called once per frame
-    void ChangeAnimation()
-    {
-        if (_levelIndex == 0) 
-        {
-            while (_tutorialAnimator.GetInteger("count") < 4)
-            {
-                if (Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Began)
-                {
-
-                    _tutorialAnimator.SetInteger("count", _tutorialAnimator.GetInteger("count") + 1);
-
-                }
-            }
-        }
-
-    }
+    public void TutorialProceed() => _tutorialAnimator.SetInteger("count", _tutorialAnimator.GetInteger("count") + 1);
 
 }
