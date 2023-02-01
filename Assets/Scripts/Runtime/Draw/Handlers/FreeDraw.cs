@@ -2,7 +2,7 @@ using Euphrates;
 using UnityEngine;
 
 [RequireComponent(typeof(IRayCaster))]
-public class Draw : MonoBehaviour
+public class FreeDraw : MonoBehaviour
 {
     [Header("Events")]
     [SerializeField] TriggerChannelSO _enable;
@@ -17,8 +17,6 @@ public class Draw : MonoBehaviour
 
     Plate _plate;
 
-    bool _enabled = false;
-
     bool _touching = false;
     Vector2 _touchPos = Vector2.zero;
 
@@ -26,9 +24,6 @@ public class Draw : MonoBehaviour
 
     private void OnEnable()
     {
-        _enable.AddListener(Enable);
-        _disable.AddListener(Disable);
-
         _camHolder.OnCameraSet += OnMainCameraSet;
 
         _inputs.OnTouchDown += OnTouchDown;
@@ -38,9 +33,6 @@ public class Draw : MonoBehaviour
 
     private void OnDisable()
     {
-        _enable.RemoveListener(Enable);
-        _disable.RemoveListener(Disable);
-
         _camHolder.OnCameraSet -= OnMainCameraSet;
 
         _inputs.OnTouchDown -= OnTouchDown;
@@ -51,11 +43,8 @@ public class Draw : MonoBehaviour
     private void Start()
     {
         _plate = GameObject.FindObjectOfType<Plate>();
+        OnMainCameraSet();
     }
-
-    void Enable() => _enabled = true;
-
-    void Disable() => _enabled = false;
 
     void OnMainCameraSet() => _mainCamera = _camHolder.Cam;
 
@@ -88,7 +77,7 @@ public class Draw : MonoBehaviour
     {
         _timePassed += Time.deltaTime;
 
-        if (!_enabled || !_touching || _timePassed < _timeTreshold)
+        if (!_touching || _timePassed < _timeTreshold)
             return;
 
         _timePassed = 0f;

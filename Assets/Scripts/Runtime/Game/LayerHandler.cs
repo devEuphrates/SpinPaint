@@ -4,6 +4,7 @@ using UnityEngine;
 public class LayerHandler : MonoBehaviour
 {
     [Header("Triggers")]
+    [SerializeField] TriggerChannelSO _paintMode;
     [SerializeField] TriggerChannelSO _layerChange;
     [SerializeField] TriggerChannelSO _lastLayer;
     [SerializeField] TriggerChannelSO _nextPainting;
@@ -12,12 +13,14 @@ public class LayerHandler : MonoBehaviour
 
     private void OnEnable()
     {
+        _paintMode.AddListener(LayerSelected);
         _layerChange.AddListener(ChangeLayer);
         _nextPainting.AddListener(ResetLayer);
     }
 
     private void OnDisable()
     {
+        _paintMode.RemoveListener(LayerSelected);
         _layerChange.RemoveListener(ChangeLayer);
         _nextPainting.RemoveListener(ResetLayer);
     }
@@ -27,9 +30,12 @@ public class LayerHandler : MonoBehaviour
         _drawingData.CurrentLayerIndex = 0;
     }
 
+    void LayerSelected() => _drawingData.CurrentLayer.Selected();
+
     void ChangeLayer()
     {
         _drawingData.CurrentLayerIndex++;
+        _drawingData.CurrentLayer.Selected();
 
         if (_drawingData.CurrentLayerIndex >= _drawingData.LayerCount - 1)
             _lastLayer.Invoke();

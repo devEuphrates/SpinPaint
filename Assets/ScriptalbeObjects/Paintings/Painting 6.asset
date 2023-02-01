@@ -14,11 +14,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Base: {fileID: 2800000, guid: 57ceef6f8e3333341a90a58d2cb2b39e, type: 3}
   Layers:
-  - Texture: {fileID: 2800000, guid: 52595359294fcb4408e3514b6f9224d9, type: 3}
-    Color: {r: 1, g: 0.27937597, b: 0, a: 1}
-  - Texture: {fileID: 2800000, guid: 648c6f08a25e2024792dcfafd5bab982, type: 3}
-    Color: {r: 1, g: 0, b: 0.50476074, a: 1}
-  - Texture: {fileID: 2800000, guid: 8e5b721f255f1a9448e227c141acc75c, type: 3}
-    Color: {r: 0.3872869, g: 1, b: 0, a: 1}
-  - Texture: {fileID: 2800000, guid: 0f2be04db543f2f43940c28d55c52b22, type: 3}
-    Color: {r: 0, g: 1, b: 0.9564264, a: 1}
+  - _paintedTexture: {fileID: 2800000, guid: 52595359294fcb4408e3514b6f9224d9, type: 3}
+    _stencilTexture: {fileID: 0}
+    Color:
+      serializedVersion: 2
+      rgba: 0
+    OnSelected:
+      m_PersistentCalls:
+        m_Calls: []
+  - _paintedTexture: {fileID: 2800000, guid: 648c6f08a25e2024792dcfafd5bab982, type: 3}
+    _stencilTexture: {fileID: 0}
+    Color:
+      serializedVersion: 2
+      rgba: 0
+    OnSelected:
+      m_PersistentCalls:
+        m_Calls: []
+  - _paintedTexture: {fileID: 2800000, guid: 8e5b721f255f1a9448e227c141acc75c, type: 3}
+    _stencilTexture: {fileID: 0}
+    Color:
+      serializedVersion: 2
+      rgba: 0
+    OnSelected:
+      m_PersistentCalls:
+        m_Calls: []
+  - _paintedTexture: {fileID: 2800000, guid: 0f2be04db543f2f43940c28d55c52b22, type: 3}
+    _stencilTexture: {fileID: 0}
+    Color:
+      serializedVersion: 2
+      rgba: 0
+    OnSelected:
+      m_PersistentCalls:
+        m_Calls: []

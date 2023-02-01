@@ -250,6 +250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 767b7fa4350f09945b5ca4925a6931ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _paintMode: {fileID: 11400000, guid: 51dba14582c6cdb48ab4b86ec88d4ee8, type: 2}
   _layerChange: {fileID: 11400000, guid: e3f92bf27e3d7db40b1a6bfca28e5595, type: 2}
   _lastLayer: {fileID: 11400000, guid: 45d7ac0f073fda045bdf254be02345bc, type: 2}
   _nextPainting: {fileID: 11400000, guid: 736f913f8048e494bbbcef9415ea7c62, type: 2}

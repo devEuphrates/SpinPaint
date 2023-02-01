@@ -51,7 +51,7 @@ public class Plate : MonoBehaviour
     Color[] _stencilColors;
     void SetLayer()
     {
-        _stencil = _drawData.CurrentLayer.Texture;
+        _stencil = _drawData.CurrentLayer.Stencil;
         _stencilColors = _stencil.GetPixels();
     }
 

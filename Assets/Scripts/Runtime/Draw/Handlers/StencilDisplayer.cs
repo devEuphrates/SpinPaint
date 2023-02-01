@@ -30,7 +30,7 @@ public class StencilDisplayer : MonoBehaviour
 
     void EnableStencil()
     {
-        _stencilMaterial.SetTexture("_AlphaMask", _drawingData.CurrentLayer.Texture);
+        _stencilMaterial.SetTexture("_AlphaMask", _drawingData.CurrentLayer.Stencil);
         Tween.DoTween(0f, 1f, _fadeDuration, Ease.OutQuad, v => _stencilMaterial.SetFloat("_Alpha", v));
     }
 
@@ -44,7 +44,7 @@ public class StencilDisplayer : MonoBehaviour
             return;
 
         _changeLayer?.Invoke();
-        _stencilMaterial.SetTexture("_AlphaMask", _drawingData.CurrentLayer.Texture);
+        _stencilMaterial.SetTexture("_AlphaMask", _drawingData.CurrentLayer.Stencil);
         Tween.DoTween(0f, 1f, _fadeDuration, Ease.OutQuad, v => _stencilMaterial.SetFloat("_Alpha", v));
     }
 }

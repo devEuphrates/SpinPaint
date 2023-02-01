@@ -14,11 +14,102 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Base: {fileID: 2800000, guid: 57ceef6f8e3333341a90a58d2cb2b39e, type: 3}
   Layers:
-  - Texture: {fileID: 2800000, guid: 8bfc7a2adcee65246890b120768bb422, type: 3}
-    Color: {r: 1, g: 0.7062056, b: 0, a: 1}
-  - Texture: {fileID: 2800000, guid: 5c81c3f7a0239fe4898f6c9e9a05d02b, type: 3}
-    Color: {r: 0, g: 0.31269073, b: 1, a: 1}
-  - Texture: {fileID: 2800000, guid: 57752924231cac8439537b6fa4fb1279, type: 3}
-    Color: {r: 1, g: 0.27937597, b: 0, a: 1}
-  - Texture: {fileID: 2800000, guid: addf3af933c941e469b087c7122eed5b, type: 3}
-    Color: {r: 0, g: 1, b: 0.46079922, a: 1}
+  - _paintedTexture: {fileID: 2800000, guid: 8bfc7a2adcee65246890b120768bb422, type: 3}
+    _stencilTexture: {fileID: 0}
+    Color:
+      serializedVersion: 2
+      rgba: 4278190335
+    OnSelected:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: d1d8389ce232f054587a8bf1b4330cdf, type: 2}
+          m_TargetAssemblyTypeName: Euphrates.TriggerChannelSO, euphrates.utilities.runtime
+          m_MethodName: Invoke
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    Data1: 0
+  - _paintedTexture: {fileID: 2800000, guid: 5c81c3f7a0239fe4898f6c9e9a05d02b, type: 3}
+    _stencilTexture: {fileID: 0}
+    Color:
+      serializedVersion: 2
+      rgba: 4285726637
+    OnSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    Data1: 0
+  - _paintedTexture: {fileID: 2800000, guid: 57752924231cac8439537b6fa4fb1279, type: 3}
+    _stencilTexture: {fileID: 0}
+    Color:
+      serializedVersion: 2
+      rgba: 4290500961
+    OnSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    Data1: 0
+  - _paintedTexture: {fileID: 2800000, guid: 52c6753c8995e9941b0d27e885181693, type: 3}
+    _stencilTexture: {fileID: 0}
+    Color:
+      serializedVersion: 2
+      rgba: 4292698001
+    OnSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    Data1: 0
+  - _paintedTexture: {fileID: 2800000, guid: 39b0261890414fa41bca12c305abbc3e, type: 3}
+    _stencilTexture: {fileID: 0}
+    Color:
+      serializedVersion: 2
+      rgba: 4292698001
+    OnSelected:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: ae7e80bfc6ed10e49beec2555acf4ef7, type: 2}
+          m_TargetAssemblyTypeName: Euphrates.TriggerChannelSO, euphrates.utilities.runtime
+          m_MethodName: Invoke
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 11400000, guid: 8eb4303da4ef3e24bafa674747559007, type: 2}
+          m_TargetAssemblyTypeName: Euphrates.TriggerChannelSO, euphrates.utilities.runtime
+          m_MethodName: Invoke
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    Data1: 0
+  - _paintedTexture: {fileID: 2800000, guid: 27859eb33fc94074d94a6f44acd46136, type: 3}
+    _stencilTexture: {fileID: 0}
+    Color:
+      serializedVersion: 2
+      rgba: 4292698001
+    OnSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    Data1: 0
+  - _paintedTexture: {fileID: 2800000, guid: 0427173e3e8f69548a6b4c0d715c2579, type: 3}
+    _stencilTexture: {fileID: 0}
+    Color:
+      serializedVersion: 2
+      rgba: 4292698001
+    OnSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    Data1: 0
