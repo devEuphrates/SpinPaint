@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: fb65519df1bcce540a69a254bc36d99a
+guid: b6dc9114bd65f7d448d6b93dae76432e
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
@@ -7,8 +7,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Wood
-    second: {fileID: 2100000, guid: d8d1a78e2dd606f4c9e61560d64b2c67, type: 2}
+      name: Solid
+    second: {fileID: 2100000, guid: e2aa11d255f4f5f4b84d662b0fe7a1e4, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PastedImage220104-201001
+    second: {fileID: 2800000, guid: 9a54abc426c12534fbac7b9981a5da50, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
