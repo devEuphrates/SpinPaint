@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Save And Load
   m_EditorClassIdentifier: 
   _default:
-    Level: 0
+    Level: 9
     Money: 0
