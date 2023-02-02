@@ -1,7 +1,5 @@
 ﻿using Euphrates;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Rendering;
 
 public class Plate : MonoBehaviour
 {
@@ -18,18 +16,18 @@ public class Plate : MonoBehaviour
     {
         _drawData.OnBrushSet += SetBrush;
         _drawData.OnLayerChange += SetLayer;
-        _drawData.OnPaintingChange += SetLayer;
 
         _reset.AddListener(ResetCanvas);
+        _reset.AddListener(SetLayer);
     }
 
     private void OnDisable()
     {
         _drawData.OnBrushSet -= SetBrush;
         _drawData.OnLayerChange -= SetLayer;
-        _drawData.OnPaintingChange -= SetLayer;
 
         _reset.RemoveListener(ResetCanvas);
+        _reset.RemoveListener(SetLayer);
     }
 
     private void Start()
