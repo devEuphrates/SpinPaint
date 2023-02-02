@@ -9,9 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40ec27bd58c555f42804bef754d6bf82, type: 3}
-  m_Name: Selected Brush
+  m_Script: {fileID: 11500000, guid: 871fa28073aecd948ab786d3e95cc5d8, type: 3}
+  m_Name: Tap End
   m_EditorClassIdentifier: 
-  _texture: {fileID: 2800000, guid: 73dc73ed7019a9544b1d3f10b6997e76, type: 3}
-  _brush: {fileID: 0}
-  _brushSize: 1
+  OnTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+  _silent: 0

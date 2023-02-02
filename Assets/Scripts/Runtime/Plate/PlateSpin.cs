@@ -1,37 +1,39 @@
 using Euphrates;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class PlateSpin : MonoBehaviour
 {
     Transform _transform;
 
-    float _speed;
-    [SerializeField] float _idleSpeed = 20f;
-    [SerializeField] float _fastSpeed = 200f;
-    [SerializeField] TriggerChannelSO _speedUp;
-    [SerializeField] TriggerChannelSO _switchToIdle;
+    static float _speed;
+    [SerializeField] List<PlateSpeedEvents> _plateSpeedEvents = new List<PlateSpeedEvents>();
 
     private void Awake()
     {
         _transform = transform;
-        _speed = _idleSpeed;
+        _speed = 0;
     }
 
     private void OnEnable()
     {
-        _speedUp?.AddListener(Fast);
-        _switchToIdle?.AddListener(Idle);
+        foreach (var ev in _plateSpeedEvents)
+            ev.Event.AddListener(ev.SetSpeed);
     }
 
     private void OnDisable()
     {
-        _speedUp?.RemoveListener(Fast);
-        _switchToIdle?.RemoveListener(Idle);
+        foreach (var ev in _plateSpeedEvents)
+            ev.Event.RemoveListener(ev.SetSpeed);
     }
 
-    void Idle() => _speed = _idleSpeed;
-
-    void Fast() => _speed = _fastSpeed;
-
     private void FixedUpdate() => _transform.rotation *= Quaternion.Euler(0f, _speed * Time.fixedDeltaTime, 0f);
+
+    [System.Serializable]
+    public struct PlateSpeedEvents
+    {
+        public TriggerChannelSO Event;
+        public float Speed;
+        public void SetSpeed() => _speed = Speed;
+    }
 }

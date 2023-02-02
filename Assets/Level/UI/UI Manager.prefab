@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4125038297151472092}
   - component: {fileID: 4125038297151472093}
   - component: {fileID: 211621473}
+  - component: {fileID: 4125038297123248489}
   m_Layer: 0
   m_Name: UI Manager
   m_TagString: Untagged
@@ -71,3 +72,50 @@ MonoBehaviour:
   _lastLayer: {fileID: 11400000, guid: 45d7ac0f073fda045bdf254be02345bc, type: 2}
   _nextButton: {fileID: 0}
   _finishButton: {fileID: 0}
+--- !u!114 &4125038297123248489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4125038297151472094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d389c3e50477344aa0e2d0d4c183231, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventActions:
+  - Name: Enable Tap And Hold
+    Event: {fileID: 11400000, guid: 8eb4303da4ef3e24bafa674747559007, type: 2}
+    OnTrigger:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+  - Name: Disable Tap And Hold
+    Event: {fileID: 11400000, guid: fcde0aa78f0cc7d4796e0b24040b6fb3, type: 2}
+    OnTrigger:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2

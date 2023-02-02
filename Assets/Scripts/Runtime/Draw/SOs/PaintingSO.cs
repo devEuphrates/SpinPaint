@@ -97,5 +97,5 @@ public struct Layer
     public Color32 Color;
     public UnityEvent OnSelected;
     public void Selected() => OnSelected?.Invoke();
-    public int Data1;
+    public float Data1;
 }

@@ -1,5 +1,7 @@
-using Euphrates;
+﻿using Euphrates;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class Plate : MonoBehaviour
 {
@@ -55,17 +57,22 @@ public class Plate : MonoBehaviour
         _stencilColors = _stencil.GetPixels();
     }
 
-    public void Paint(Vector2 uvCoords)
+    public void Paint(Vector2Int pixelCoords)
     {
-        Vector2Int pixelCoords = new Vector2Int((int)(uvCoords.x * _painted.width), (int)(uvCoords.y * _painted.height));
-        Vector2Int brushHalfSize = new Vector2Int((int)(_brush.Texture.width * .5f), (int)(_brush.Texture.height * .5f));
+        Vector2Int brushHalfSize = new Vector2Int((int)(_brush.Brush.width * .5f), (int)(_brush.Brush.height * .5f));
         Vector2Int offsettedCoords = new Vector2Int(pixelCoords.x - brushHalfSize.x, pixelCoords.y - brushHalfSize.y);
 
         //Color[] area = _painted.GetPixels(offsettedCoords.x, offsettedCoords.y, _brush.Texture.width, _brush.Texture.height);
 
-        for (int i = 0; i < _brush.Coordinates.Length; i++)
+        Color[] brush = _brush.Brush.GetPixels();
+        int brushW = _brush.Brush.width;
+
+        for (int i = 0; i < brush.Length; i++)
         {
-            Vector2Int brushCoords = _brush.Coordinates[i];
+            if (brush[i].r < .1f)
+                continue;
+
+            Vector2Int brushCoords = new Vector2Int(i % brushW, i / brushW);
             Vector2Int coords = new Vector2Int(offsettedCoords.x + brushCoords.x, offsettedCoords.y + brushCoords.y);
 
             int indx = coords.x + coords.y * _stencil.width;
@@ -84,5 +91,11 @@ public class Plate : MonoBehaviour
 
         //_painted.SetPixels(offsettedCoords.x, offsettedCoords.y, _brushTex.width, _brushTex.height, area);
         _painted.Apply(true);
+    }
+
+    public void Paint(Vector2 uvCoords)
+    {
+        Vector2Int pixelCoords = new Vector2Int((int)(uvCoords.x * _painted.width), (int)(uvCoords.y * _painted.height));
+        Paint(pixelCoords);
     }
 }

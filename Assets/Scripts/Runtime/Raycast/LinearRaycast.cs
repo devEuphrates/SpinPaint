@@ -7,8 +7,6 @@ public class LinearRaycast : MonoBehaviour, IRayCaster
     [SerializeField] float _distance;
     [SerializeField] LayerMask _layerMask;
 
-    [SerializeField] LineRenderer _rayIndicator;
-
     readonly RaycastHit EMPTY_HIT = new RaycastHit();
     RaycastHit[] _hits = new RaycastHit[5];
 

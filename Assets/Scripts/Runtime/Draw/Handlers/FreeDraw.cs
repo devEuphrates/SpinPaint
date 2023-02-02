@@ -72,7 +72,6 @@ public class FreeDraw : MonoBehaviour
         _plate.Paint(hit.textureCoord);
 
         Vibrations.Haptic(HapticTypes.LightImpact);
-
     }
 
     float _timePassed = 0f;
