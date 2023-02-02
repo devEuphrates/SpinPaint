@@ -14,35 +14,78 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Base: {fileID: 2800000, guid: 57ceef6f8e3333341a90a58d2cb2b39e, type: 3}
   Layers:
-  - _paintedTexture: {fileID: 2800000, guid: 075afac1ad02cf44f8e34505c47f3a20, type: 3}
+  - _paintedTexture: {fileID: 2800000, guid: e219e728c1ad8294ca362a0ff382098b, type: 3}
     _stencilTexture: {fileID: 0}
     Color:
       serializedVersion: 2
-      rgba: 0
+      rgba: 4280164095
     OnSelected:
       m_PersistentCalls:
-        m_Calls: []
-  - _paintedTexture: {fileID: 2800000, guid: 26a3ff5ff1da0794faef1fbc0ce91a9e, type: 3}
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 24cc643f1866427489305c50da2766ab, type: 2}
+          m_TargetAssemblyTypeName: BrushSO, Assembly-CSharp
+          m_MethodName: SetSize
+          m_Mode: 4
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 1
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 11400000, guid: d1d8389ce232f054587a8bf1b4330cdf, type: 2}
+          m_TargetAssemblyTypeName: Euphrates.TriggerChannelSO, euphrates.utilities.runtime
+          m_MethodName: Invoke
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    Data1: 0
+  - _paintedTexture: {fileID: 2800000, guid: 01a31e1641980bc4d93e119d3d36041f, type: 3}
     _stencilTexture: {fileID: 0}
     Color:
       serializedVersion: 2
-      rgba: 0
+      rgba: 4278255615
     OnSelected:
       m_PersistentCalls:
         m_Calls: []
-  - _paintedTexture: {fileID: 2800000, guid: 651e6b0a1c9cfa7419f5a157d845789d, type: 3}
-    _stencilTexture: {fileID: 0}
+    Data1: 0
+  - _paintedTexture: {fileID: 2800000, guid: 119844af2e63de6478c13c663a2e6d16, type: 3}
+    _stencilTexture: {fileID: 2800000, guid: 493f85cb8e7067546934e1069dcdb090, type: 3}
     Color:
       serializedVersion: 2
-      rgba: 0
+      rgba: 4291952384
     OnSelected:
       m_PersistentCalls:
-        m_Calls: []
-  - _paintedTexture: {fileID: 2800000, guid: 74424297614f44e4d874c65c856ec542, type: 3}
-    _stencilTexture: {fileID: 0}
-    Color:
-      serializedVersion: 2
-      rgba: 0
-    OnSelected:
-      m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 24cc643f1866427489305c50da2766ab, type: 2}
+          m_TargetAssemblyTypeName: BrushSO, Assembly-CSharp
+          m_MethodName: SetSize
+          m_Mode: 4
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 1.4
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 11400000, guid: 8eb4303da4ef3e24bafa674747559007, type: 2}
+          m_TargetAssemblyTypeName: Euphrates.TriggerChannelSO, euphrates.utilities.runtime
+          m_MethodName: Invoke
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    Data1: 0.43
