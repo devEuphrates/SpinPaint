@@ -14,35 +14,63 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Base: {fileID: 2800000, guid: 57ceef6f8e3333341a90a58d2cb2b39e, type: 3}
   Layers:
-  - _paintedTexture: {fileID: 2800000, guid: 1eb1e2d3467d9304887090cf508da5df, type: 3}
+  - _paintedTexture: {fileID: 2800000, guid: 8dcaf196b7438124dafa0ef65b5c58e9, type: 3}
     _stencilTexture: {fileID: 0}
     Color:
       serializedVersion: 2
-      rgba: 0
+      rgba: 4280164095
     OnSelected:
       m_PersistentCalls:
-        m_Calls: []
-  - _paintedTexture: {fileID: 2800000, guid: d4825358e2c0130409b09ff31e3d6a03, type: 3}
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 24cc643f1866427489305c50da2766ab, type: 2}
+          m_TargetAssemblyTypeName: BrushSO, Assembly-CSharp
+          m_MethodName: SetSize
+          m_Mode: 4
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 1
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 11400000, guid: d1d8389ce232f054587a8bf1b4330cdf, type: 2}
+          m_TargetAssemblyTypeName: Euphrates.TriggerChannelSO, euphrates.utilities.runtime
+          m_MethodName: Invoke
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    Data1: 0
+  - _paintedTexture: {fileID: 2800000, guid: f5aa7b0839bf87249b760107b5472783, type: 3}
     _stencilTexture: {fileID: 0}
     Color:
       serializedVersion: 2
-      rgba: 0
+      rgba: 4278255615
     OnSelected:
       m_PersistentCalls:
         m_Calls: []
-  - _paintedTexture: {fileID: 2800000, guid: 114a06accfbde2a4ea8edd3c2b1e4563, type: 3}
+    Data1: 0
+  - _paintedTexture: {fileID: 2800000, guid: 064c96477a4928b4fbd5dc1ae737e636, type: 3}
     _stencilTexture: {fileID: 0}
     Color:
       serializedVersion: 2
-      rgba: 0
+      rgba: 4291952384
     OnSelected:
       m_PersistentCalls:
         m_Calls: []
-  - _paintedTexture: {fileID: 2800000, guid: d69cc67b4766a6e499b1452da4570b8d, type: 3}
+    Data1: 0
+  - _paintedTexture: {fileID: 2800000, guid: 69a2238c0bda1f041a6e2f8e9c5196c9, type: 3}
     _stencilTexture: {fileID: 0}
     Color:
       serializedVersion: 2
-      rgba: 0
+      rgba: 4292134449
     OnSelected:
       m_PersistentCalls:
         m_Calls: []
+    Data1: 0
