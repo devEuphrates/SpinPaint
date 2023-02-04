@@ -13,5 +13,9 @@ MonoBehaviour:
   m_Name: Save And Load
   m_EditorClassIdentifier: 
   _default:
+<<<<<<< Updated upstream
     Level: 0
+=======
+    Level: 3
+>>>>>>> Stashed changes
     Money: 0
