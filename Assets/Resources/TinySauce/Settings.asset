@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa11ec82e9746928e211e7f096812ca, type: 3}
+  m_Name: Settings
+  m_EditorClassIdentifier: 
+  gameAnalyticsIosGameKey: 
+  gameAnalyticsIosSecretKey: 
+  gameAnalyticsAndroidGameKey: c6ae1e2cfa7bae8d49ae6796da76449c
+  gameAnalyticsAndroidSecretKey: 5afb540d4c305baa895c32885517805f72d333a9
+  facebookAppId: 1592364047876014
+  facebookClientToken: 3b74fe889eca87f28bcf216ecc7d6659
+  adjustIOSToken: 
+  adjustAndroidToken: 4tbhafx1wp34
+  EditorIdfa: 9f178b1c-6efe-429d-a679-b4c9c3d7efb7
+  UseRemoteConfig: 0
+  UseVoodooAnalytics: 1
+  companyName: Resin Games
+  privacyPolicyURL: http://firatyildirim.com/privacy/
+  developerContactEmail: support@resingames.com

@@ -27,7 +27,7 @@ public class PlateSpin : MonoBehaviour
             ev.Event.RemoveListener(ev.SetSpeed);
     }
 
-    private void FixedUpdate() => _transform.rotation *= Quaternion.Euler(0f, _speed * Time.fixedDeltaTime, 0f);
+    private void Update() => _transform.rotation *= Quaternion.Euler(0f, _speed * Time.deltaTime, 0f);
 
     [System.Serializable]
     public struct PlateSpeedEvents
