@@ -18,7 +18,7 @@ MonoBehaviour:
     _stencilTexture: {fileID: 0}
     Color:
       serializedVersion: 2
-      rgba: 4293590966
+      rgba: 4278190335
     OnSelected:
       m_PersistentCalls:
         m_Calls:
@@ -51,7 +51,7 @@ MonoBehaviour:
     _stencilTexture: {fileID: 0}
     Color:
       serializedVersion: 2
-      rgba: 4289651452
+      rgba: 4285726637
     OnSelected:
       m_PersistentCalls:
         m_Calls: []
@@ -60,7 +60,7 @@ MonoBehaviour:
     _stencilTexture: {fileID: 0}
     Color:
       serializedVersion: 2
-      rgba: 4289967103
+      rgba: 4290500961
     OnSelected:
       m_PersistentCalls:
         m_Calls: []
@@ -69,7 +69,7 @@ MonoBehaviour:
     _stencilTexture: {fileID: 0}
     Color:
       serializedVersion: 2
-      rgba: 4294935481
+      rgba: 4292698001
     OnSelected:
       m_PersistentCalls:
         m_Calls: []
@@ -78,7 +78,7 @@ MonoBehaviour:
     _stencilTexture: {fileID: 2800000, guid: dff306a507acf3a439f494a388df7bc7, type: 3}
     Color:
       serializedVersion: 2
-      rgba: 4294935481
+      rgba: 4292698001
     OnSelected:
       m_PersistentCalls:
         m_Calls:
@@ -102,7 +102,7 @@ MonoBehaviour:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
-            m_FloatArgument: 0.65
+            m_FloatArgument: 0.6
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
@@ -111,7 +111,7 @@ MonoBehaviour:
     _stencilTexture: {fileID: 2800000, guid: aacd423589223f64fa44230a6f5576c1, type: 3}
     Color:
       serializedVersion: 2
-      rgba: 4294935481
+      rgba: 4292698001
     OnSelected:
       m_PersistentCalls:
         m_Calls: []
@@ -120,7 +120,7 @@ MonoBehaviour:
     _stencilTexture: {fileID: 2800000, guid: 8a9b62c3d33fdf444a8bbdba525a41b7, type: 3}
     Color:
       serializedVersion: 2
-      rgba: 4294935481
+      rgba: 4292698001
     OnSelected:
       m_PersistentCalls:
         m_Calls: []

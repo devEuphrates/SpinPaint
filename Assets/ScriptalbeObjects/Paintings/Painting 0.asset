@@ -18,7 +18,7 @@ MonoBehaviour:
     _stencilTexture: {fileID: 0}
     Color:
       serializedVersion: 2
-      rgba: 4294751733
+      rgba: 4280778605
     OnSelected:
       m_PersistentCalls:
         m_Calls:
@@ -51,7 +51,7 @@ MonoBehaviour:
     _stencilTexture: {fileID: 0}
     Color:
       serializedVersion: 2
-      rgba: 4292016022
+      rgba: 4290115569
     OnSelected:
       m_PersistentCalls:
         m_Calls: []
@@ -60,7 +60,7 @@ MonoBehaviour:
     _stencilTexture: {fileID: 0}
     Color:
       serializedVersion: 2
-      rgba: 4288083696
+      rgba: 4291940776
     OnSelected:
       m_PersistentCalls:
         m_Calls: []
@@ -69,7 +69,7 @@ MonoBehaviour:
     _stencilTexture: {fileID: 0}
     Color:
       serializedVersion: 2
-      rgba: 4289835516
+      rgba: 4292125086
     OnSelected:
       m_PersistentCalls:
         m_Calls: []
