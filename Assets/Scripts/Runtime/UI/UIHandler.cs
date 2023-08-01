@@ -32,7 +32,7 @@ public class UIHandler : MonoBehaviour
     void ResetOtherCanvases()
     {
         for (int i = 0; i < _canvases.Length; i++)
-            _canvases[i].Canvas.gameObject.SetActive(false);
+            _canvases[i].Canvas.SetActive(false);
     }
 
 }
@@ -42,12 +42,11 @@ public class UIHandler : MonoBehaviour
 struct TriggererdCanvas
 {
     public string Name;
-    public Canvas Canvas;
+    public GameObject Canvas;
     public TriggerChannelSO Trigger;
 
     public void OnTriggered()
     {
         Canvas.gameObject.SetActive(true);
-        
     }
 }

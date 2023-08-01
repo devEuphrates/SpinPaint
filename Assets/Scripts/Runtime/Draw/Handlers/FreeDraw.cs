@@ -75,7 +75,7 @@ public class FreeDraw : MonoBehaviour
     }
 
     float _timePassed = 0f;
-    float _timeTreshold = .01f;
+    float _timeTreshold = .005f;
     private void Update()
     {
         _timePassed += Time.deltaTime;

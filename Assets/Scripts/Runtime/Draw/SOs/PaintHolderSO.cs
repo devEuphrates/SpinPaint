@@ -6,6 +6,8 @@ public class PaintHolderSO : ScriptableObject
 {
     [SerializeField] List<PaintingSO> _paintings = new List<PaintingSO>();
 
+    public int Count => _paintings.Count;
+
     public PaintingSO GetPainting(int index, bool repeat = true)
     {
         bool overflow = index > _paintings.Count - 1;

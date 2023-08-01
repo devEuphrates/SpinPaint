@@ -1,6 +1,4 @@
 using Euphrates;
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
@@ -11,19 +9,18 @@ public class MenuHandler : MonoBehaviour
     [Space]
     [Header("Data to Bind")]
     [SerializeField] IntSO _levelIndex;
-    [SerializeField] TriggerChannelSO _newLevelSo;
 
     private void OnEnable()
     {
-        _newLevelSo.AddListener(OnLevelChange);
+        _levelIndex.OnChange += OnLevelChange;
     }
 
     private void OnDisable()
     {
-        _newLevelSo.RemoveListener(OnLevelChange);
+        _levelIndex.OnChange -= OnLevelChange;
     }
 
-    void OnLevelChange()
+    void OnLevelChange(int _)
     {
         _levelText.text = "Level: " + (_levelIndex.Value + 1).ToString();
     }

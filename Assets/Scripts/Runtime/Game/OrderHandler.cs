@@ -4,8 +4,9 @@ using UnityEngine;
 public class OrderHandler : MonoBehaviour
 {
     [Header("Events")]
-    [SerializeField] TriggerChannelSO _init;
-    [SerializeField] TriggerChannelSO _nextPainting;
+    [SerializeReference] TriggerChannelSO _init;
+    [SerializeReference] TriggerChannelSO _nextPainting;
+    [SerializeReference] TriggerChannelSO _setRandomPainting; 
 
     [Space]
     [SerializeField] DrawDataSO _drawingData;
@@ -30,5 +31,10 @@ public class OrderHandler : MonoBehaviour
     {
         _paintingIndex.Value++;
         SetPainting();
+    }
+
+    public void SetRandomPainting(params int[] avoidedIndexes)
+    {
+
     }
 }
