@@ -3,32 +3,23 @@ using UnityEngine;
 
 public class CalculatePayment : MonoBehaviour
 {
-    //Checks if we are in evaluation stage
-    [SerializeField] TriggerChannelSO _orderCompletedTrigger;
-
     //gets the similiarity percentage and budget for
     [SerializeField] FloatSO _similiarityPercentage;
     [SerializeField] FloatSO _customerBudget;
-    
+    [SerializeField] FloatSO _totalMoney;
 
-    [SerializeField] FloatSO _bonusMoneyMultiplier;
-    [SerializeField] FloatSO _calculatedPayment;
+    [SerializeField] float _bonusMoneyMultiplier;
+    float _calculatedPayment;
 
-    private void OnEnable()
-    {
-        _orderCompletedTrigger.AddListener(CalculatePay);
-    }
-    private void OnDisable()
-    {
-        _orderCompletedTrigger.RemoveListener(CalculatePay);
-    }
-    private void CalculatePay()
+    public void CalculatePay()
     {
         if(_similiarityPercentage.Value == 100)
-            _calculatedPayment.Value = (_customerBudget.Value / 100) * _similiarityPercentage.Value * _bonusMoneyMultiplier;
+            _calculatedPayment = (_customerBudget.Value / 100) * _similiarityPercentage.Value * _bonusMoneyMultiplier;
 
         else
-            _calculatedPayment.Value = (_customerBudget.Value / 100) * _similiarityPercentage.Value;
+            _calculatedPayment = (_customerBudget.Value / 100) * _similiarityPercentage.Value;
+
+        _totalMoney.Value += _calculatedPayment;
     }
 
 }
