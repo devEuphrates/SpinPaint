@@ -856,13 +856,14 @@ GameObject:
   - component: {fileID: 8407460922124937314}
   - component: {fileID: 8407460922124937313}
   - component: {fileID: 5955102929650620881}
+  - component: {fileID: 517338604}
   m_Layer: 5
   m_Name: Evaluation Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &8407460922124937324
 RectTransform:
   m_ObjectHideFlags: 0
@@ -964,6 +965,22 @@ MonoBehaviour:
   _text: {fileID: 8407460920456205533}
   _similarityTextFormat: '%{0} Match!'
   _similarity: {fileID: 11400000, guid: 92af4b11895f5df49bcc679a35537a73, type: 2}
+--- !u!114 &517338604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8407460922124937312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00958f068cbc71643aad841d6d104b6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _similiarityPercentage: {fileID: 11400000, guid: 92af4b11895f5df49bcc679a35537a73, type: 2}
+  _customerBudget: {fileID: 11400000, guid: b8f13f690608789488c2f5f6ef25a5f7, type: 2}
+  _totalMoney: {fileID: 11400000, guid: e5adb4d0f938ae5429e4cada5b3494ea, type: 2}
+  _bonusMoneyMultiplier: 2
 --- !u!1001 &8407460920430564626
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -973,7 +990,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1187370173028213366, guid: ff545d9f562c8ea4dabdf7c70ecfcbd9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1187370173028213366, guid: ff545d9f562c8ea4dabdf7c70ecfcbd9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
@@ -990,7 +1007,7 @@ PrefabInstance:
     - target: {fileID: 1187370173028213366, guid: ff545d9f562c8ea4dabdf7c70ecfcbd9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 11400000, guid: b0522f7b23ee39c4c8afba92099a5207, type: 2}
+      objectReference: {fileID: 517338604}
     - target: {fileID: 1187370173028213366, guid: ff545d9f562c8ea4dabdf7c70ecfcbd9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
@@ -1009,7 +1026,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1187370173028213366, guid: ff545d9f562c8ea4dabdf7c70ecfcbd9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: Invoke
+      value: CalculatePay
       objectReference: {fileID: 0}
     - target: {fileID: 1187370173028213366, guid: ff545d9f562c8ea4dabdf7c70ecfcbd9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -1021,7 +1038,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1187370173028213366, guid: ff545d9f562c8ea4dabdf7c70ecfcbd9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: Euphrates.TriggerChannelSO, euphrates.utilities.runtime
+      value: CalculatePayment, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1187370173028213366, guid: ff545d9f562c8ea4dabdf7c70ecfcbd9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
