@@ -1,6 +1,5 @@
 using Euphrates;
 using UnityEngine;
-using Voodoo.Utils;
 
 [RequireComponent(typeof(IRayCaster))]
 public class FreeDraw : MonoBehaviour
@@ -70,8 +69,6 @@ public class FreeDraw : MonoBehaviour
             return;
 
         _plate.Paint(hit.textureCoord);
-
-        Vibrations.Haptic(HapticTypes.LightImpact);
     }
 
     float _timePassed = 0f;

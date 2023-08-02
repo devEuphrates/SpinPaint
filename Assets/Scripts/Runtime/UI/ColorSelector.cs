@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.UI;
-using Voodoo.Utils;
 
 public class ColorSelector : MonoBehaviour
 {
@@ -17,6 +16,5 @@ public class ColorSelector : MonoBehaviour
     public void OnSelect()
     {
         _drawingData.Color = _selectedColor;
-        Vibrations.Haptic(HapticTypes.Selection);
     }
 }
