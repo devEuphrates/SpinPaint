@@ -1307,6 +1307,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 970179290, guid: 789895ba5c13d9143aaf82a66e74c27c, type: 3}
+      propertyPath: m_fontSize
+      value: 56.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 970179290, guid: 789895ba5c13d9143aaf82a66e74c27c, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 970179290, guid: 789895ba5c13d9143aaf82a66e74c27c, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 6718744647037980075, guid: 789895ba5c13d9143aaf82a66e74c27c, type: 3}
       propertyPath: m_Name
       value: Main Menu Canvas
