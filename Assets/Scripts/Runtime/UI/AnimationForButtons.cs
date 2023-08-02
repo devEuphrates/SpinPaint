@@ -24,8 +24,8 @@ public class AnimationForButtons : MonoBehaviour
 
     void ResetButons()
     {
-        _nextButton.interactable = true;
-        _finishButton.interactable = false;
+        _nextButton.gameObject.SetActive(true);
+        _finishButton.gameObject.SetActive(false);
 
         Vector2 pos = ((RectTransform)_nextButton.transform).anchoredPosition;
         ((RectTransform)_nextButton.transform).anchoredPosition = new Vector2(40, pos.y);
@@ -33,7 +33,7 @@ public class AnimationForButtons : MonoBehaviour
 
     private void OnLastLayer()
     {
-        _nextButton.interactable = false;
-        _finishButton.interactable = true;
+        _nextButton.gameObject.SetActive(false);
+        _finishButton.gameObject.SetActive(true);
     }
 }

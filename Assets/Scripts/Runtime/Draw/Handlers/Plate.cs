@@ -19,7 +19,6 @@ public class Plate : MonoBehaviour
         _drawData.OnPaintingChange += SetLayer;
 
         _reset.AddListener(ResetCanvas);
-        _reset.AddListener(SetLayer);
     }
 
     private void OnDisable()
@@ -29,14 +28,11 @@ public class Plate : MonoBehaviour
         _drawData.OnPaintingChange -= SetLayer;
 
         _reset.RemoveListener(ResetCanvas);
-        _reset.RemoveListener(SetLayer);
     }
 
     private void Start()
     {
-        SetLayer();
         SetBrush();
-
         ResetCanvas();
     }
 

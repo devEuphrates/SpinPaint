@@ -205,8 +205,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _load: {fileID: 11400000, guid: 076c55a7e1ba9a94b9b75420dc89c068, type: 2}
   _saveEvents:
-  - {fileID: 11400000, guid: 51dba14582c6cdb48ab4b86ec88d4ee8, type: 2}
-  - {fileID: 11400000, guid: 51dba14582c6cdb48ab4b86ec88d4ee8, type: 2}
+  - {fileID: 11400000, guid: fb43ce0a6b0961a4caccfc8f78a0ba40, type: 2}
   _saveChannel: {fileID: 11400000, guid: eeb74b6bc9c0d7e4090e9f2acb357f10, type: 2}
   _totalMoney: {fileID: 11400000, guid: e5adb4d0f938ae5429e4cada5b3494ea, type: 2}
   _deskUpgradeCount: {fileID: 11400000, guid: f35f507b569a32941963a1125909308b, type: 2}
