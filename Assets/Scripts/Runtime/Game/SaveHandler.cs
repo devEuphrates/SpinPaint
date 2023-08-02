@@ -8,8 +8,11 @@ public class SaveHandler : MonoBehaviour
     [SerializeField] TriggerChannelSO[] _saveEvents;
 
     [Space]
+    [Header("Save")]
     [SerializeField] SaveLoadSO _saveChannel;
-    [SerializeField] IntSO _levelIndex;
+    [SerializeField] FloatSO _totalMoney;
+    [SerializeField] IntSO _deskUpgradeCount;
+    [SerializeField] FloatSO _deskUpgradePrice;
 
     private void OnEnable()
     {
@@ -25,11 +28,22 @@ public class SaveHandler : MonoBehaviour
             _saveEvents[i].RemoveListener(SaveGame);
     }
 
-    void SaveGame() => _saveChannel.Save(new SaveData() { Level = _levelIndex.Value, Money = 0});
+    void SaveGame()
+    {
+        _saveChannel.Save(new SaveData()
+        {
+            Money = _totalMoney.Value,
+            UpgradeCount = _deskUpgradeCount.Value,
+            UpgradeCost = _deskUpgradePrice.Value
+        });
+    }
 
     void LoadGame()
     {
         SaveData data = _saveChannel.Load();
-        _levelIndex.Value = data.Level;
+
+        _totalMoney.Value = data.Money;
+        _deskUpgradeCount.Value = data.UpgradeCount;
+        _deskUpgradePrice.Value = data.UpgradeCost;
     }
 }

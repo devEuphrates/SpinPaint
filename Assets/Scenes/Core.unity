@@ -206,8 +206,11 @@ MonoBehaviour:
   _load: {fileID: 11400000, guid: 076c55a7e1ba9a94b9b75420dc89c068, type: 2}
   _saveEvents:
   - {fileID: 11400000, guid: 51dba14582c6cdb48ab4b86ec88d4ee8, type: 2}
+  - {fileID: 11400000, guid: 51dba14582c6cdb48ab4b86ec88d4ee8, type: 2}
   _saveChannel: {fileID: 11400000, guid: eeb74b6bc9c0d7e4090e9f2acb357f10, type: 2}
-  _levelIndex: {fileID: 11400000, guid: 456d12f2153ef474a9d7fdf3dfbe78c1, type: 2}
+  _totalMoney: {fileID: 11400000, guid: e5adb4d0f938ae5429e4cada5b3494ea, type: 2}
+  _deskUpgradeCount: {fileID: 11400000, guid: f35f507b569a32941963a1125909308b, type: 2}
+  _deskUpgradePrice: {fileID: 11400000, guid: 92941ed18762c524893e0fbd9fdb480b, type: 2}
 --- !u!4 &1169722620
 Transform:
   m_ObjectHideFlags: 0

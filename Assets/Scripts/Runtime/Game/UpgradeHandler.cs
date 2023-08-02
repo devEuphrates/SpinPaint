@@ -36,6 +36,7 @@ public class UpgradeHandler : MonoBehaviour
             return;
         }
 
+        _totalMoney.Value -= _upgradePrice.Value;
         _upgradePrice.Value *= _upgradePriceMultiplier;
 
         DeskActivation();

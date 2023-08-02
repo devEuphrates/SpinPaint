@@ -50,6 +50,9 @@ MonoBehaviour:
   - Name: Menu Canvas
     Canvas: {fileID: 0}
     Trigger: {fileID: 11400000, guid: 3fc9d8dc12b625c46a7ac5a0bb836c4f, type: 2}
+  - Name: Customer Canvas
+    Canvas: {fileID: 0}
+    Trigger: {fileID: 11400000, guid: 95d1e7b3e74e54d4d8e64b6acfafdd3d, type: 2}
   - Name: Drawing Canvas
     Canvas: {fileID: 0}
     Trigger: {fileID: 11400000, guid: 51dba14582c6cdb48ab4b86ec88d4ee8, type: 2}

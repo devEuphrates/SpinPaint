@@ -121,7 +121,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 540658773}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 78852bef61669684ab78d1bd516c2589, type: 2}
+        m_TargetAssemblyTypeName: Euphrates.TriggerChannelSO, euphrates.utilities.runtime
+        m_MethodName: Invoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &970179288
 GameObject:
   m_ObjectHideFlags: 0
@@ -134,7 +146,7 @@ GameObject:
   - component: {fileID: 970179291}
   - component: {fileID: 970179290}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: UpgradeText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -566,6 +578,7 @@ GameObject:
   - component: {fileID: 6718744647037980077}
   - component: {fileID: 6718744647037980074}
   - component: {fileID: 1302638228}
+  - component: {fileID: 1302638229}
   m_Layer: 5
   m_Name: Main Menu Canvas
   m_TagString: Untagged
@@ -670,6 +683,22 @@ MonoBehaviour:
   _value: {fileID: 11400000, guid: e5adb4d0f938ae5429e4cada5b3494ea, type: 2}
   _text: {fileID: 6904465992233581558}
   _format: '{0}'
+  _toStringParams: 0
+--- !u!114 &1302638229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6718744647037980075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2e12c38b3d20be419c5dc77aa7e29bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _value: {fileID: 11400000, guid: 92941ed18762c524893e0fbd9fdb480b, type: 2}
+  _text: {fileID: 970179290}
+  _format: Upgrade   {0}
   _toStringParams: 0
 --- !u!1001 &1099229615344767873
 PrefabInstance:

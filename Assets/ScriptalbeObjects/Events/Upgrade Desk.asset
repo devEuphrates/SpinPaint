@@ -9,7 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e4b326442f0cba40a0599e345f6089f, type: 3}
-  m_Name: Total Money
+  m_Script: {fileID: 11500000, guid: 871fa28073aecd948ab786d3e95cc5d8, type: 3}
+  m_Name: Upgrade Desk
   m_EditorClassIdentifier: 
-  _value: 3000
+  OnTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+  _silent: 0

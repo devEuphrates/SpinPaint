@@ -18,15 +18,15 @@ public class OrderHandler : MonoBehaviour
 
     private void OnEnable()
     {
-        _init?.AddListener(SetRandomPainting);
-        _nextPainting?.AddListener(SetRandomPainting);
+        //_init?.AddListener(SetRandomPainting);
+        //_nextPainting?.AddListener(SetRandomPainting);
         _setRandomPainting?.AddListener(SetRandomPainting);
     }
 
     private void OnDisable()
     {
-        _init?.RemoveListener(SetRandomPainting);
-        _nextPainting?.RemoveListener(SetRandomPainting);
+        //_init?.RemoveListener(SetRandomPainting);
+        //_nextPainting?.RemoveListener(SetRandomPainting);
         _setRandomPainting?.RemoveListener(SetRandomPainting);
     }
 

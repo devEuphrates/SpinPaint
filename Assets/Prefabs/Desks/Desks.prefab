@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8023001059386650874}
   - component: {fileID: 8023001059386650875}
+  - component: {fileID: 88627054}
   m_Layer: 0
   m_Name: Desks
   m_TagString: Untagged
@@ -48,7 +49,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2307b0bc89a2d2643b01c6d06541e6d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _upgradePriceMultiplier: 0
+  _upgradePriceMultiplier: 2
   _upgradeCount: {fileID: 11400000, guid: f35f507b569a32941963a1125909308b, type: 2}
   _upgradePrice: {fileID: 11400000, guid: 92941ed18762c524893e0fbd9fdb480b, type: 2}
   _totalMoney: {fileID: 11400000, guid: e5adb4d0f938ae5429e4cada5b3494ea, type: 2}
@@ -57,6 +58,36 @@ MonoBehaviour:
   - {fileID: 8023001059218818191}
   - {fileID: 1669924446149072890}
   - {fileID: 2142404134548878390}
+--- !u!114 &88627054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8023001059386650853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d389c3e50477344aa0e2d0d4c183231, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventActions:
+  - Name: Trigger Upgrade
+    Event: {fileID: 11400000, guid: 78852bef61669684ab78d1bd516c2589, type: 2}
+    OnTrigger:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8023001059386650875}
+          m_TargetAssemblyTypeName: UpgradeHandler, Assembly-CSharp
+          m_MethodName: UpgradeDesk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &325114038952203761
 PrefabInstance:
   m_ObjectHideFlags: 0

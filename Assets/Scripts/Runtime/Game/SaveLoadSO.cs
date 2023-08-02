@@ -41,6 +41,7 @@ public class SaveLoadSO : ScriptableObject
 [System.Serializable]
 public struct SaveData
 {
-    public int Level;
-    public int Money;
+    public float Money;
+    public int UpgradeCount;
+    public float UpgradeCost;
 }

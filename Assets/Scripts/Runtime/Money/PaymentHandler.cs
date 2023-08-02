@@ -20,11 +20,11 @@ public class PaymentHandler : MonoBehaviour
 
     private void CalculatePay()
     {
-        if(_similiarityPercentage.Value == 100)
-            _calculatedPayment.Value = (_customerBudget.Value / 100) * _similiarityPercentage.Value * _bonusMoneyMultiplier;
+        if(_similiarityPercentage.Value == 1f)
+            _calculatedPayment.Value = _customerBudget.Value * _similiarityPercentage.Value * _bonusMoneyMultiplier;
 
         else
-            _calculatedPayment.Value = (_customerBudget.Value / 100) * _similiarityPercentage.Value;
+            _calculatedPayment.Value = _customerBudget.Value * _similiarityPercentage.Value;
     }
 
     public void MakePayment()

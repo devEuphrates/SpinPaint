@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Save And Reload
   m_EditorClassIdentifier: 
   _default:
-    Level: 0
     Money: 0
+    UpgradeCount: 0
+    UpgradeCost: 250

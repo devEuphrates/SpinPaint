@@ -159,7 +159,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8023001059386650874, guid: 1358c37f5a2da7a4da37106a9fdba933, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.919
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8023001059386650874, guid: 1358c37f5a2da7a4da37106a9fdba933, type: 3}
       propertyPath: m_LocalRotation.w
@@ -188,10 +188,6 @@ PrefabInstance:
     - target: {fileID: 8023001059386650874, guid: 1358c37f5a2da7a4da37106a9fdba933, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8023001060150485708, guid: 1358c37f5a2da7a4da37106a9fdba933, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1358c37f5a2da7a4da37106a9fdba933, type: 3}
@@ -516,7 +512,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 360590791}
-  m_LocalRotation: {x: 0.3111229, y: 0.000000023125809, z: -0.000000007570706, w: 0.9503697}
+  m_LocalRotation: {x: 0.3111229, y: -0.000000023125809, z: 0.000000007570706, w: 0.9503697}
   m_LocalPosition: {x: 0, y: 2.1729999, z: 4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2223,8 +2219,8 @@ MonoBehaviour:
   _maxSkips: {fileID: 11400000, guid: a63ced30280ca8a4280c7a9f7e95dc2d, type: 2}
   _leftSkips: {fileID: 11400000, guid: 216c8c218d07bb542983b356de6127c4, type: 2}
   _currentPrice: {fileID: 11400000, guid: b8f13f690608789488c2f5f6ef25a5f7, type: 2}
-  _minPrice: 25
-  _maxPrice: 50
+  _minPrice: 250
+  _maxPrice: 500
 --- !u!4 &1480739030 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3048694956776522559, guid: ee9554e76d61e824283e374dcacabfc5, type: 3}
