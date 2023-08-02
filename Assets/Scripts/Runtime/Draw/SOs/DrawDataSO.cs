@@ -7,7 +7,7 @@ public class DrawDataSO : ScriptableObject
     public Color Color;
     public void ResetColor() => Color = Color.white;
     
-    [SerializeField] BrushSO _selectedBrush;
+    [SerializeReference] BrushSO _selectedBrush;
     public event UnityAction OnBrushSet;
     public BrushSO SelectedBrush
     {
@@ -21,7 +21,7 @@ public class DrawDataSO : ScriptableObject
 
     public float BrushSize = 1f;
 
-    PaintingSO _painting;
+    [SerializeReference] PaintingSO _painting;
     public event UnityAction OnPaintingChange;
     public PaintingSO Painting
     {
