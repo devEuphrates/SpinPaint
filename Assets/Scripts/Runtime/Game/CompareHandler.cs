@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 
 public static class CompareHandler
@@ -23,11 +20,13 @@ public static class CompareHandler
         //for identical bytes
         int coloredPixels = 0;
         int identicalPixels = 0;
+
         for (int i = 0; i < colors1.Length; i++)
         {
+            /*
             if (colors1[i] == Color.black || colors1[i] == Color.white)
                 continue;
-
+            */
             coloredPixels++;
 
             if (colors1[i] == colors2[i])
@@ -35,6 +34,8 @@ public static class CompareHandler
         }
 
         float similarity = (float)identicalPixels / (float)coloredPixels;
+        similarity = similarity >= .98 ? 1 : similarity;
+
         return similarity;
     }
 }
