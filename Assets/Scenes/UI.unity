@@ -2958,24 +2958,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdf9cbb1c06221a44a4eeca8dc08a0e3, type: 3}
---- !u!114 &6672821488302629795
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8832425781701743122}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cba82666172c18440b040357db3d2dfd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _paintedTexture: {fileID: 2800000, guid: a83f2271ec14cf44db3da07f28488920, type: 3}
-  _drawingData: {fileID: 11400000, guid: 29bf299f34a694b4a839b0fbfd85cab0, type: 2}
-  _slider: {fileID: 0}
-  _text: {fileID: 0}
-  _similarityTextFormat: '%{0} Match!'
-  _similarity: {fileID: 11400000, guid: 92af4b11895f5df49bcc679a35537a73, type: 2}
 --- !u!1001 &8832425781047570272
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3334,7 +3316,6 @@ GameObject:
   - component: {fileID: 8832425781701743121}
   - component: {fileID: 8832425781701743120}
   - component: {fileID: 8832425781701743123}
-  - component: {fileID: 6672821488302629795}
   m_Layer: 5
   m_Name: Customer Canvas
   m_TagString: Untagged
