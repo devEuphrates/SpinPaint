@@ -19,7 +19,12 @@ public class TargetPaintingDisplayer : MonoBehaviour
 
     void SetPainting()
     {
-        Texture2D texture = _drawingData.Painting.PaintingWithAlpha;
+        PaintingSO painting = _drawingData.Painting;
+
+        if (painting == null)
+            return;
+
+        Texture2D texture = painting.PaintingWithAlpha;
         _image.sprite = Sprite.Create(texture, new Rect(0f, 0f, texture.width, texture.height), new Vector2(0f, 0f), 1);
     }
 }

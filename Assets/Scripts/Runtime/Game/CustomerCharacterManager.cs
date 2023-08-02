@@ -90,6 +90,8 @@ public class CustomerCharacterManager : MonoBehaviour
         for (int i = _customers.Count - 1; i >= 0; i--)
             Destroy(_customers[i].gameObject);
 
+        _customers.Clear();
+
         _skips = 0;
         _currentCustomerIndex = 0;
 
