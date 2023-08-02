@@ -52,7 +52,6 @@ MonoBehaviour:
   _upgradeCount: {fileID: 0}
   _upgradePrice: {fileID: 0}
   _totalMoney: {fileID: 0}
-  _upgradeBought: {fileID: 0}
   _desks: []
 --- !u!1001 &325114038952203761
 PrefabInstance:
@@ -123,6 +122,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8023001059386650874}
     m_Modifications:
+    - target: {fileID: 938518431874963811, guid: 48776ba749d98114ba678ce9dacc2b8d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.00000039115545
+      objectReference: {fileID: 0}
+    - target: {fileID: 938518431874963811, guid: 48776ba749d98114ba678ce9dacc2b8d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.00000011920929
+      objectReference: {fileID: 0}
     - target: {fileID: 3139604469659273142, guid: 48776ba749d98114ba678ce9dacc2b8d, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -170,6 +177,14 @@ PrefabInstance:
     - target: {fileID: 6046559938073393235, guid: 48776ba749d98114ba678ce9dacc2b8d, type: 3}
       propertyPath: m_Name
       value: Desk2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7701241970179491331, guid: 48776ba749d98114ba678ce9dacc2b8d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0000010430812
+      objectReference: {fileID: 0}
+    - target: {fileID: 7701241970179491331, guid: 48776ba749d98114ba678ce9dacc2b8d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.5496058
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48776ba749d98114ba678ce9dacc2b8d, type: 3}
@@ -233,6 +248,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Desk0
       objectReference: {fileID: 0}
+    - target: {fileID: 2471638977365484281, guid: da08689f3bd8b654b91f558779bf3228, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da08689f3bd8b654b91f558779bf3228, type: 3}
 --- !u!4 &8023001060150485709 stripped
@@ -250,6 +269,10 @@ PrefabInstance:
     - target: {fileID: 2140647514442461380, guid: f564b02af174f7a4cb887936274227ff, type: 3}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2140647514442461380, guid: f564b02af174f7a4cb887936274227ff, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 2140647514442461380, guid: f564b02af174f7a4cb887936274227ff, type: 3}
       propertyPath: m_LocalPosition.x

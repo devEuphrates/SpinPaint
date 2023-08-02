@@ -130,69 +130,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4600264378873081526, guid: 7dbfb7b320b56c748856ee7a15330541, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4600264378873081526, guid: 7dbfb7b320b56c748856ee7a15330541, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4600264378873081526, guid: 7dbfb7b320b56c748856ee7a15330541, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4600264378873081526, guid: 7dbfb7b320b56c748856ee7a15330541, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4600264378873081526, guid: 7dbfb7b320b56c748856ee7a15330541, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4600264378873081526, guid: 7dbfb7b320b56c748856ee7a15330541, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5666554995586341799, guid: 7dbfb7b320b56c748856ee7a15330541, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7266329060849203044, guid: 7dbfb7b320b56c748856ee7a15330541, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7266329060849203044, guid: 7dbfb7b320b56c748856ee7a15330541, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7266329060849203044, guid: 7dbfb7b320b56c748856ee7a15330541, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 517338604}
-    - target: {fileID: 7266329060849203044, guid: 7dbfb7b320b56c748856ee7a15330541, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7266329060849203044, guid: 7dbfb7b320b56c748856ee7a15330541, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: CalculatePay
-      objectReference: {fileID: 0}
-    - target: {fileID: 7266329060849203044, guid: 7dbfb7b320b56c748856ee7a15330541, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: CalculatePayment, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 7266329060849203044, guid: 7dbfb7b320b56c748856ee7a15330541, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 8407460922124937312, guid: 7dbfb7b320b56c748856ee7a15330541, type: 3}
       propertyPath: m_Name
       value: Evaluation Canvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 8407460922124937312, guid: 7dbfb7b320b56c748856ee7a15330541, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8407460922124937324, guid: 7dbfb7b320b56c748856ee7a15330541, type: 3}
       propertyPath: m_Pivot.x
@@ -280,27 +224,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7dbfb7b320b56c748856ee7a15330541, type: 3}
---- !u!1 &517338603 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8407460922124937312, guid: 7dbfb7b320b56c748856ee7a15330541, type: 3}
-  m_PrefabInstance: {fileID: 517338602}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &517338604
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 517338603}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00958f068cbc71643aad841d6d104b6c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _similiarityPercentage: {fileID: 11400000, guid: 92af4b11895f5df49bcc679a35537a73, type: 2}
-  _customerBudget: {fileID: 11400000, guid: b8f13f690608789488c2f5f6ef25a5f7, type: 2}
-  _totalMoney: {fileID: 11400000, guid: e5adb4d0f938ae5429e4cada5b3494ea, type: 2}
-  _bonusMoneyMultiplier: 2
 --- !u!1 &714183240
 GameObject:
   m_ObjectHideFlags: 0

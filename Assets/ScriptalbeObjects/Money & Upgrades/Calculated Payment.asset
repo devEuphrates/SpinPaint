@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9e4b326442f0cba40a0599e345f6089f, type: 3}
-  m_Name: Upgrade Price
+  m_Name: Calculated Payment
   m_EditorClassIdentifier: 
-  _value: 600
+  _value: 0
