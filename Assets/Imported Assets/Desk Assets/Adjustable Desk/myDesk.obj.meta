@@ -3,7 +3,32 @@ guid: 2d9d2c513ec28d54ba8c89fb88dc82be
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlackCoatSteel
+    second: {fileID: 2100000, guid: 03f580f158e1d36428504d0c0c1413b2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlackPlastic
+    second: {fileID: 2100000, guid: c3d57e405e6190c45b9a20ea82030a01, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlackWood
+    second: {fileID: 2100000, guid: d9ee7ec758088e14e915a30fd3503e1e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GrayPlastic
+    second: {fileID: 2100000, guid: 3459ea942b92f984c91399c58c5e8dfd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteSteelScrew
+    second: {fileID: 2100000, guid: a1a050aa15061c84990aee05131740c2, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
