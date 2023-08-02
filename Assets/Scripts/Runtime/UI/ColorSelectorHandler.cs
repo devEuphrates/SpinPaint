@@ -1,6 +1,5 @@
 using Euphrates;
 using UnityEngine;
-using Voodoo.Utils;
 
 public class ColorSelectorHandler : MonoBehaviour
 {
