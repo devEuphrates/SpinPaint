@@ -54,6 +54,7 @@ MonoBehaviour:
   _upgradeCount: {fileID: 11400000, guid: f35f507b569a32941963a1125909308b, type: 2}
   _upgradePrice: {fileID: 11400000, guid: 92941ed18762c524893e0fbd9fdb480b, type: 2}
   _totalMoney: {fileID: 11400000, guid: e5adb4d0f938ae5429e4cada5b3494ea, type: 2}
+  _upgradeParticles: {fileID: 7835414506719651820}
   _desks:
   - {fileID: 8023001060150485708}
   - {fileID: 8023001059218818191}
@@ -242,6 +243,11 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 7640569549096705746, guid: 85f9295e3d3c1b7439e873ed5feb5577, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 85f9295e3d3c1b7439e873ed5feb5577, type: 3}
+--- !u!198 &7835414506719651820 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7640569549096705744, guid: 85f9295e3d3c1b7439e873ed5feb5577, type: 3}
+  m_PrefabInstance: {fileID: 483075377630345532}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7835414506719651821 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7640569549096705745, guid: 85f9295e3d3c1b7439e873ed5feb5577, type: 3}
@@ -347,7 +353,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2471638977365484280, guid: da08689f3bd8b654b91f558779bf3228, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.021
       objectReference: {fileID: 0}
     - target: {fileID: 2471638977365484280, guid: da08689f3bd8b654b91f558779bf3228, type: 3}
       propertyPath: m_LocalPosition.z

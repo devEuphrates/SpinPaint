@@ -12,7 +12,7 @@ public class UpgradeHandler : MonoBehaviour
     [SerializeField] FloatSO _upgradePrice;
     [SerializeField] FloatSO _totalMoney;
 
-    [SerializeField] TriggerChannelSO _upgradeParticles;
+    [SerializeField] ParticleSystem _upgradeParticles;
     [SerializeField] List<GameObject> _desks = new List<GameObject>();
 
     private void Start()
@@ -40,7 +40,7 @@ public class UpgradeHandler : MonoBehaviour
         _totalMoney.Value -= _upgradePrice.Value;
         _upgradePrice.Value *= _upgradePriceMultiplier;
 
-        _upgradeParticles.Invoke();
+        _upgradeParticles.Play();
         DeskActivation();
         Debug.Log("Upgraded");
     }

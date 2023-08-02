@@ -1,7 +1,7 @@
 using Euphrates;
 using UnityEngine;
 
-public class CustomerManager : MonoBehaviour
+public class CustomerOrderManager : MonoBehaviour
 {
     [SerializeReference] TriggerChannelSO _nextCustomer;
     [SerializeReference] TriggerChannelSO _customerPhase;
