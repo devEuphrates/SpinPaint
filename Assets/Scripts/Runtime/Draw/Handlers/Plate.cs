@@ -16,6 +16,7 @@ public class Plate : MonoBehaviour
     {
         _drawData.OnBrushSet += SetBrush;
         _drawData.OnLayerChange += SetLayer;
+        _drawData.OnPaintingChange += SetLayer;
 
         _reset.AddListener(ResetCanvas);
         _reset.AddListener(SetLayer);
@@ -25,6 +26,7 @@ public class Plate : MonoBehaviour
     {
         _drawData.OnBrushSet -= SetBrush;
         _drawData.OnLayerChange -= SetLayer;
+        _drawData.OnPaintingChange -= SetLayer;
 
         _reset.RemoveListener(ResetCanvas);
         _reset.RemoveListener(SetLayer);
