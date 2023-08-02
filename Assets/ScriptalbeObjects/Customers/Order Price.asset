@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a4c455a015d6804684b3b3408319ee6, type: 3}
-  m_Name: Order Prize
+  m_Script: {fileID: 11500000, guid: 9e4b326442f0cba40a0599e345f6089f, type: 3}
+  m_Name: Order Price
   m_EditorClassIdentifier: 
   _value: 0

@@ -9,10 +9,10 @@ public class CustomerManager : MonoBehaviour
     [SerializeReference] IntSO _maxSkips;
 
     [Space]
-    [SerializeReference] IntSO _currentPrize;
-    [SerializeField] int _minPrize;
-    [SerializeField] int _maxPrize;
-    [SerializeField, Min(1)] int _prizeMultiplier = 1;
+    [SerializeReference] FloatSO _currentPrice;
+    [SerializeField] float _minPrize;
+    [SerializeField] float _maxPrize;
+    [SerializeField, Min(1)] float _prizeMultiplier = 1;
 
     int _skips = 0;
 
@@ -47,9 +47,9 @@ public class CustomerManager : MonoBehaviour
     {
         _randomPainting?.Invoke();
 
-        int prize = Random.Range(_minPrize, _maxPrize);
-        prize *= _prizeMultiplier;
+        float price = Random.Range(_minPrize, _maxPrize);
+        price *= _prizeMultiplier;
 
-        _currentPrize.Value = prize;
+        _currentPrice.Value = price;
     }
 }
