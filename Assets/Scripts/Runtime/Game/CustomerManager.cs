@@ -6,13 +6,15 @@ public class CustomerManager : MonoBehaviour
     [SerializeReference] TriggerChannelSO _nextCustomer;
     [SerializeReference] TriggerChannelSO _customerPhase;
     [SerializeReference] TriggerChannelSO _randomPainting;
+
+    [Space]
     [SerializeReference] IntSO _maxSkips;
+    [SerializeReference] IntSO _leftSkips;
 
     [Space]
     [SerializeReference] FloatSO _currentPrice;
-    [SerializeField] float _minPrize;
-    [SerializeField] float _maxPrize;
-    [SerializeField, Min(1)] float _prizeMultiplier = 1;
+    [SerializeField] float _minPrice;
+    [SerializeField] float _maxPrice;
 
     int _skips = 0;
 
@@ -31,14 +33,18 @@ public class CustomerManager : MonoBehaviour
     void EnteredPhase()
     {
         _skips = 0;
+        _leftSkips.Value = _maxSkips.Value;
 
         GetOrder();
     }
 
     void NextCustomer()
     {
-        if (++_skips > _maxSkips)
+        if (_skips + 1 > _maxSkips)
             return;
+
+        _skips++;
+        _leftSkips.Value--;
 
         GetOrder();
     }
@@ -47,8 +53,7 @@ public class CustomerManager : MonoBehaviour
     {
         _randomPainting?.Invoke();
 
-        float price = Random.Range(_minPrize, _maxPrize);
-        price *= _prizeMultiplier;
+        float price = Random.Range(_minPrice, _maxPrice);
 
         _currentPrice.Value = price;
     }
