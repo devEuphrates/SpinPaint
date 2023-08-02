@@ -326,7 +326,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11400000, guid: 51dba14582c6cdb48ab4b86ec88d4ee8, type: 2}
+        - m_Target: {fileID: 11400000, guid: 95d1e7b3e74e54d4d8e64b6acfafdd3d, type: 2}
           m_TargetAssemblyTypeName: Euphrates.TriggerChannelSO, euphrates.utilities.runtime
           m_MethodName: Invoke
           m_Mode: 1
@@ -544,4 +544,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _levelText: {fileID: 6904465992233581558}
   _levelIndex: {fileID: 11400000, guid: 456d12f2153ef474a9d7fdf3dfbe78c1, type: 2}
-  _newLevelSo: {fileID: 11400000, guid: 736f913f8048e494bbbcef9415ea7c62, type: 2}

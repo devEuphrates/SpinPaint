@@ -169,9 +169,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _init: {fileID: 11400000, guid: bde9410296c89b04ea963d5e1ae121b2, type: 2}
   _nextPainting: {fileID: 11400000, guid: 736f913f8048e494bbbcef9415ea7c62, type: 2}
+  _setRandomPainting: {fileID: 11400000, guid: aca0d1c97358bbf47bc9a324b4b1706b, type: 2}
   _drawingData: {fileID: 11400000, guid: 29bf299f34a694b4a839b0fbfd85cab0, type: 2}
   _paintings: {fileID: 11400000, guid: 0432da7197b357849b323a80736a61fb, type: 2}
   _paintingIndex: {fileID: 11400000, guid: 456d12f2153ef474a9d7fdf3dfbe78c1, type: 2}
+  _avoidedIndexList: {fileID: 11400000, guid: a2e281dca51ef1e4e8d2fd15696f861c, type: 2}
 --- !u!1 &1169722618
 GameObject:
   m_ObjectHideFlags: 0
