@@ -141,6 +141,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 88627054, guid: 1358c37f5a2da7a4da37106a9fdba933, type: 3}
+      propertyPath: _eventActions.Array.data[0].OnTrigger.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 88627054, guid: 1358c37f5a2da7a4da37106a9fdba933, type: 3}
+      propertyPath: _eventActions.Array.data[0].OnTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 88627054, guid: 1358c37f5a2da7a4da37106a9fdba933, type: 3}
+      propertyPath: _eventActions.Array.data[0].OnTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 88627052}
+    - target: {fileID: 88627054, guid: 1358c37f5a2da7a4da37106a9fdba933, type: 3}
+      propertyPath: _eventActions.Array.data[0].OnTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 88627054, guid: 1358c37f5a2da7a4da37106a9fdba933, type: 3}
+      propertyPath: _eventActions.Array.data[0].OnTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 88627054, guid: 1358c37f5a2da7a4da37106a9fdba933, type: 3}
+      propertyPath: _eventActions.Array.data[0].OnTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.ParticleSystem, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 88627054, guid: 1358c37f5a2da7a4da37106a9fdba933, type: 3}
+      propertyPath: _eventActions.Array.data[0].OnTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7835414506719651809, guid: 1358c37f5a2da7a4da37106a9fdba933, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8023001059386650853, guid: 1358c37f5a2da7a4da37106a9fdba933, type: 3}
       propertyPath: m_Name
       value: Desks
@@ -191,6 +223,46 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1358c37f5a2da7a4da37106a9fdba933, type: 3}
+--- !u!198 &88627052 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7835414506719651820, guid: 1358c37f5a2da7a4da37106a9fdba933, type: 3}
+  m_PrefabInstance: {fileID: 88627051}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &88627053 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8023001059386650853, guid: 1358c37f5a2da7a4da37106a9fdba933, type: 3}
+  m_PrefabInstance: {fileID: 88627051}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &88627055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 88627053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d389c3e50477344aa0e2d0d4c183231, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventActions:
+  - Name: Trigger Upgrade Particles
+    Event: {fileID: 11400000, guid: 84d3a8228f05dc840a1ded41967a74bb, type: 2}
+    OnTrigger:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 88627052}
+          m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &91059388
 PrefabInstance:
   m_ObjectHideFlags: 0
